@@ -197,5 +197,30 @@
 
 
     <!-- form fait par jeff-->
+     <form action="" methode="POST" class="form-voyage">
+        <div class="form-voyage">
+            <label for="pseudo" id="pseudo" >Pseudonyme <br></label>
+             <input type="text"  name="pseudo" id="pseudo" required />
+        </div>
+
+        <div class="form-voyage">
+            <label for="mail" id="mail" >Adresse mail <br></label>
+            <input type="mail"  name="mail" id="mail" required />
+        </div>
+
+        <div class="form-voyage">
+            <label for="commentaire"  >Votre commentaire <br></label>
+            <textarea id="commentaire" name="commentaire"  required >      </textarea>
+        </div>
+
+        <div class="form-voyage">
+           <input type="checkbox" name="rgpd" id="rgpd">
+           <label for="rgpd" id="rgpd" >En ajoutant un commentaire, je reconnais avoir pris connaissance de la <a href="">Politique de confidentialité</a> et des droits dont je dispose sur mes données personnelles.</label>
+        </div>
+
+        <div class="form-voyage">
+            <button type="submit">Ajouter mon commentaire</button>
+        </div>
+     </form>
   </body>
 </html>
