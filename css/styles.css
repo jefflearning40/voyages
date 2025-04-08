@@ -104,9 +104,69 @@ section {
   content: "→";
 }
 
+/* sommaire */
+h2 .titre--sommaire {
+  align-items: flex-start;
+}
+.bloc-sommaire {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 2rem;
+}
+.sommaire {
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-left: var(--padding-lg);
+  width: 100%;
+  height: 100%;
+}
+
 /* Article */
 
 section {
-    width: 45%;
-    height: 100%;
+  width: 45%;
+  height: 100%;
+}
+
+/* Texte section  */
+p .description-img {
+  text-size-adjust: 2rem;
+}
+p.description-img {
+  font-size: 1.5rem;
+  text-align: start;
+  margin-top: 2rem;
+}
+
+.liste {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  text-align: start;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+.text {
+  font-size: 1.5rem;
+  text-align: start;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.liste > strong {
+  font-style: bold;
+}
+
+/* img section */
+
+img {
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
 }
