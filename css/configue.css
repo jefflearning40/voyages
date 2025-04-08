@@ -13,4 +13,16 @@
     --img-bcg:url(../assets/background-1.jpg);
 }
 
-    
+  
+:root {
+  --font-family-title: "Lora", serif;
+  --font-family-base: Arial, sans-serif;
+}
+
+:root {
+  --padding-sm: 10px;
+  --padding-md: 20px;
+  --padding-lg: 40px;
+  --padding-xl: 60px;
+  --padding-xxl: 80px;
+}
