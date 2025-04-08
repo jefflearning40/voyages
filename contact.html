@@ -29,19 +29,31 @@
         </div>
         <main>
             <form action="contact.html" methode="POST">
-                <label class="label" for="Identity" id="identity">Nom et prénom :</label>
-                <input class="input" type="text" name="identity" id="identity">
-                <label class="label" for="tel" id="tel" >Votre numéro de téléphone :</label>
-                <input class="input" type="number" name="tel" id="tel">
-                <label class="label" for="mail" id="mail">Votre adresse mail :</label>
-                <input class="input" type="mail" name="mail" id="mail">
-                <label class="label" for="message" id="message">Votre message :</label>
-                <textarea class="boxmessage" name="message" id="message"></textarea>
-                <input type="checkbox" name="confidentiality" id="confidentiality">
-                <label class="label"for="confidentiality">
-                    En validant ce formulaire,je reconnais avoir pris connaissance de la <a href="">politique de confidentialité</a> et des droits dont je dispose sur mes données personnelles
-                </label>
-                <button class="valider" type="submit">Envoyer mon message</button>
+                <div class="nom">
+                    <label class="label" for="Identity" id="identity">Nom et prénom :</label>
+                    <input class="input" type="text" name="identity" id="identity">
+                </div>
+                <div class="tel">
+                    <label class="label" for="tel" id="tel" >Votre numéro de téléphone :</label>
+                    <input class="input" type="number" name="tel" id="tel">
+                </div>
+                <div class="mail">
+                    <label class="label" for="mail" id="mail">Votre adresse mail :</label>
+                    <input class="input" type="mail" name="mail" id="mail">
+                </div>
+                <div class="boxtext">
+                    <label class="label" for="message" id="message">Votre message :</label>
+                    <textarea class="boxmessage" name="message" id="message"></textarea>
+                </div>
+                <div class="confident">
+                    <input type="checkbox" name="confidentiality" id="confidentiality">
+                    <label class="label"for="confidentiality">
+                        En validant ce formulaire,je reconnais avoir pris connaissance de la <a href="">politique de confidentialité</a> et des droits dont je dispose sur mes données personnelles
+                    </label>
+                </div>
+                <div class="valider">
+                    <button class="valider" type="submit">Envoyer mon message</button>
+                </div>
             </form>
         </main>
     
