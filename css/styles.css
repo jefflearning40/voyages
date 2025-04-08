@@ -72,22 +72,29 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
   height: 100%;
   width: 100%;
 }
 
 /* section */
+
 section {
-  padding: 5rem;
   gap: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 45%;
-  width: 100%;
+  width: 45%;
+  height: 100%;
 }
+/* img section */
 
+section img {
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+}
 /* fil d'ariane */
 
 .breadcrumb ul {
@@ -105,68 +112,117 @@ section {
 }
 
 /* sommaire */
-h2 .titre--sommaire {
-  align-items: flex-start;
-}
 .bloc-sommaire {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
   width: 100%;
   height: 100%;
-  gap: 2rem;
+  background-color: var(--color-bleu);
+  border-radius: var(--border-radius);
+  color: var(--color-white);
+  padding: 2rem;
+  font-size: 1.5rem;
 }
-.sommaire {
-  gap: 2rem;
+.title {
   display: flex;
-  flex-direction: column;
-  justify-content: start;
-  padding-left: var(--padding-lg);
-  width: 100%;
-  height: 100%;
+  flex-direction: row;
+  justify-content: space-between;
 }
-
-/* Article */
-
-section {
-  width: 45%;
-  height: 100%;
+.ligne {
+  background-color: var(--color-white);
+  height: 1px;
+  width: 8rem;
+}
+.btn-close {
+  border-color: none;
+  background-color: none;
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 0.9rem;
+}
+.sommaire > li {
+  font-size: 0.9rem;
+  list-style: inside;
+  text-decoration: none;
+  color: var(--color-white);
+  padding: -0.5rem;
+  margin: 0.5rem;
+  font-family: var(--font-family-base);
+}
+.sommaire > li a {
+  text-decoration: none;
+  color: var(--color-white);
 }
 
 /* Texte section  */
-p .description-img {
-  text-size-adjust: 2rem;
-}
-p.description-img {
-  font-size: 1.5rem;
-  text-align: start;
-  margin-top: 2rem;
-}
 
+p.description-img {
+  font-size: 1rem;
+  text-align: start;
+  font-family: var(--font-family-base);
+}
 .liste {
+  font-family: var(--font-family-base);
   display: flex;
   flex-direction: column;
-  font-size: 1.5rem;
+  font-size: var(--text-md);
   text-align: start;
-  margin-top: 2rem;
   gap: 1rem;
+}
+.liste > li {
+  list-style: inside;
+  font-family: var(--font-family-base);
 }
 .text {
   font-size: 1.5rem;
   text-align: start;
-  margin-top: 2rem;
   gap: 1rem;
 }
-
-.liste > strong {
-  font-style: bold;
+.histoire > h2 {
+  font-size: 1.5rem;
+  font-family: var(--font-family-title);
+  text-align: center;
+}
+div > p {
+  font-size: 1rem;
+  text-align: start;
+  font-family: var(--font-family-base);
+}
+.termal > ul {
+  font-size: 1rem;
+  text-align: start;
+  gap: 1rem;
+  list-style: inside;
+  font-family: var(--font-family-base);
+}
+div.description-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+font-family: karla, sans-serif;
 }
 
-/* img section */
+/* La taille et le font ne veux pas ce mettre */
 
-img {
+
+
+
+/* Formulaire */
+.form-commentaire {
+
+  border: 1px solid var(--color-gris);
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
   width: 100%;
-  height: auto;
-  margin-top: 2rem;
+  height: 100%;
+  padding: 2rem;
 }
