@@ -1,6 +1,8 @@
 @import url("reset.css");
 @import url("configue.css");
 @import url("components/banner.css");
+@import url("contact.css");
+@import url("components/share.css");
 
 /* header */
 
@@ -32,7 +34,7 @@ nav {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  gap: 5rem;
+  gap: 2rem;
   list-style: none;
 }
 .nav__list li a {
