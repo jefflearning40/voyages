@@ -1,0 +1,13 @@
+:root {
+/*  Partie Couleur */
+  --color-main: rgba(4, 112, 176, 1);
+  --color-orange: rgba(244, 119, 73, 1);
+  --color-blue-linair:linear-gradient(90deg,rgba(21, 147, 221, 1) 0%,rgba(4, 112, 176, 1) 100%);
+  --color-white: rgba(255, 255, 255, 1);
+
+  /* Radius , taille */
+    --radius-1: 10px;
+    --taille-w: 915px;
+    --taille-2-h: 610px;
+}
+    
