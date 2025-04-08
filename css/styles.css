@@ -213,6 +213,8 @@ font-family: karla, sans-serif;
 
 
 /* Formulaire */
+/* borderà 1 coleur var faite padding de  50 px radduis de 10px */
+
 .form-commentaire {
 
   border: 1px solid var(--color-gris);
@@ -226,3 +228,17 @@ font-family: karla, sans-serif;
   height: 100%;
   padding: 2rem;
 }
+
+/* Carde guides
+copier coller de l'autre 
+*/
+
+/* Nos dérnières Publications 
+fond bleu dégradé , titre un fin un peu plus gros que les autres
+3 cards avec une image et un texte + un sowdaow 
+*/
+
+/* carosels 
+4 img 
+plus scroll bar
+*/
