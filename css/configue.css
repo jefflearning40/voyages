@@ -20,9 +20,9 @@
 }
 
 :root {
-  --padding-sm: 10px;
-  --padding-md: 20px;
-  --padding-lg: 40px;
-  --padding-xl: 60px;
-  --padding-xxl: 80px;
+  --padding-sm: 0.625rem; /* 10px */
+  --padding-md: 1.25rem; /* 20px */
+  --padding-lg: 2.5rem;   /* 40px */
+  --padding-xl: 3.75;   /* 60px */
+  --padding-xxl: 5rem;  /* 80px */
 }

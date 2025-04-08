@@ -67,19 +67,7 @@ div.titre {
 
 /* Bloc main */
 
-.main {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%; */
-}
-
-/* section */
-section {
-  padding: 5rem;
-gap: 1rem;
+main {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -88,12 +76,26 @@ gap: 1rem;
   width: 100%;
 }
 
+/* section */
+section {
+  padding: 5rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 45%;
+  width: 100%;
+}
+
 /* fil d'ariane */
 
 .breadcrumb ul {
+  margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  justify-content: flex-start;
 }
 
 .breadcrumb li:not(:last-child)::after {
@@ -104,7 +106,7 @@ gap: 1rem;
 
 /* Article */
 
-p .description-img {
-  text-align: center;
-  
+section {
+    width: 45%;
+    height: 100%;
 }
