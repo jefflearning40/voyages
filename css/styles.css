@@ -50,6 +50,7 @@ nav {
 color: var(--color-white);
 font-size: 5rem;
 position: absolute;
+
 }
 div.titre {
   display: flex;
@@ -60,5 +61,7 @@ div.titre {
   position: relative;
 }
 
+/* fil ariane */
 
-/* fil d'ariane  */
+
+
