@@ -1,5 +1,6 @@
 @import url("reset.css");
 @import url("configue.css");
+@import url("components/banner.css");
 
 /* header */
 
@@ -8,7 +9,7 @@
   flex-direction: row;
   justify-content: start;
   background-color: var(--color-main);
-  height: 121px;
+  height: 8rem;
   gap: 2rem;
 }
 .logo {
@@ -42,14 +43,16 @@ nav {
 }
 
 /* Titre + img  */
-.image-header {
-    width: 100%;
-    height: 600px;
-} 
+/* .image-header {
+  width: 100%;
+  height: 32rem;
+}
 .Titre-site {
-color: var(--color-white);
-font-size: 5rem;
-position: absolute;
+  bottom: 30%;
+  color: var(--color-white);
+  font-size: 2rem;
+  text-align: center;
+  position: absolute;
 }
 div.titre {
   display: flex;
@@ -58,7 +61,48 @@ div.titre {
   height: 100%;
   width: 100%;
   position: relative;
+} */
+
+/* Bloc main */
+
+.main {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%; */
 }
 
+/* section */
+section {
+  padding: 5rem;
+gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
 
-/* fil d'ariane  */
+/* fil d'ariane */
+
+.breadcrumb ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.breadcrumb li:not(:last-child)::after {
+  display: inline-block;
+  margin: 0 0.25rem;
+  content: "→";
+}
+
+/* Article */
+
+p .description-img {
+  text-align: center;
+  
+}

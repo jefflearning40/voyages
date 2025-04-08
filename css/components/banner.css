@@ -1,0 +1,41 @@
+.c-banner {
+    position: relative;
+    height: 40rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.c-banner .c-banner__title {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    place-content: center;
+    text-align: center;
+    padding: var(--padding-xxl) var(--padding-lg);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); 
+}
+
+.c-banner .c-banner__title h1 {
+    font-size: 60px;
+    color: #fff;     
+    font-family: var(--font-family-title);
+    max-width: 1000px;
+
+}
+
+.c-banner .c-banner__background {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.c-banner .c-banner__background img {
+    width: 100%;
+    object-fit: cover;
+}
