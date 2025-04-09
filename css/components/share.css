@@ -1,4 +1,6 @@
 
+@import url(var-sharbtn.css);
+
 .share {
     background: rgba(0, 0, 0, 0.7);
     height: 100vh;
@@ -25,7 +27,7 @@
     transform: translate(-50%, -50%);
     margin-left: 30px;
     margin-right: 30px;
-    border-radius: 5%;
+    border-radius: 15px;
 
 
 }
@@ -37,15 +39,56 @@
     flex-direction: row;
     justify-content: space-between;
     gap:10px;
-    border-radius: 30px;
+    font-weight: bolder;
+    
+    
+    
 
 }
-
-
 .share-content-header {
     border-bottom: 1px solid #000000
     
 }
-.rounded{
-    border-radius: 25px;
+.bx{
+    border-style: solid;
+    border-color: var(--color-red);
+    border-radius: 15px;
+    background-color:var(--color-black);
+    color:white;
+    font-weight: bolder;
+    transition: all 1s ease-out;
+}
+.bf{
+    border-color:var(--color-black);
+    border-radius: 15px;
+    background-color: var(--color-blue);
+    color:white;
+    font-weight: bolder;
+}
+.bp{
+    border-color: var(--color-black);
+    border-radius: 15px;
+    background-color: var(--color-red);
+    color:var(--color-white);
+    font-weight: bolder;
+}
+
+.bx:hover,.bx:focus{
+    border-color: var(--color-black);
+    background-color:var(--color-white);
+    color:var(--color-black)
+}
+.bf:hover,.bf:focus{
+    background-color:var(--color-white);
+    color:var(--color-blue);
+}
+.bp:hover,.bp:focus{
+    background-color:var(--color-white);
+    color:var(--color-red);
+}
+
+.fermer{
+    border-color: var(--color-black);
+    border-style: solid;
+    background-color: var(--color-white);
 }
