@@ -66,27 +66,36 @@ div.titre {
   position: relative;
 } */
 
-/* Bloc main */
+/* Bloc Géneral balise */
+
+/*  body, html, main, section, img, p, ul, li, div */
 
 main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 100%;
+  gap: var(--gap-all-sm);
+  height: var(--height-all);
+  width: var(--width-all);
 }
 
-/* section */
 section {
-  padding: 5rem;
   gap: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 45%;
-  width: 100%;
+  width: 45%;
+  height: var(--height-all);
+}
+
+/* img section */
+
+section img {
+  width: var(--width-all);
+  height: auto;
+  margin-top: 2rem;
 }
 
 /* fil d'ariane */
@@ -105,9 +114,135 @@ section {
   content: "→";
 }
 
-/* Article */
-
-section {
-    width: 45%;
-    height: 100%;
+/* class gloabal */
+.text {
+  font-size: var(--text-md);
+  font-family: var(--font-family-base);
+  list-style: inside;
+  gap: var(--gap-all-sm);
 }
+.titre-global {
+  font-size: 1.5rem;
+  font-family: var(--font-family-title);
+  text-align: center;
+}
+
+.liste {
+  list-style: inside;
+  font-family: var(--font-family-base);
+  display: flex;
+  flex-direction: column;
+
+  text-align: start;
+  gap: var(--gap-all-sm);
+}
+
+.paragraph {
+  font-size: var(--text-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-all-sm);
+}
+
+div > p {
+  font-size: 1rem;
+  text-align: start;
+  font-family: var(--font-family-base);
+}
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* sommaire */
+.bloc-sommaire {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-bleu);
+  border-radius: var(--border-radius);
+  color: var(--color-white);
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+.ligne {
+  background-color: var(--color-white);
+  height: 1px;
+  width: 8rem;
+}
+.btn-close {
+  border-color: none;
+  background-color: none;
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 0.9rem;
+}
+.sommaire > li {
+  font-size: 0.9rem;
+  list-style: inside;
+  text-decoration: none;
+  color: var(--color-white);
+  padding: -0.5rem;
+  margin: 0.5rem;
+  font-family: var(--font-family-base);
+}
+.sommaire > li a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+/* form section  */
+
+.form-commentaire {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: var(--gap-all-md);
+  width: var(--width-all);
+  height: var(--height-all);
+  border: solid 1px;
+  border-color: var(--color-gris);
+  border-radius: 15px;
+  padding: 3rem;
+}
+.form-input {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-all-sm);
+  width: var(--width-all);
+  height: var(--height-all);
+  padding-bottom: var(--padding-sm);
+}
+
+.form-input > input {
+  height: 50px;
+  border-radius: 6px;
+  border: 1px solid;
+}
+.form-input > textarea {
+  height: 60px;
+  border-radius: 6px;
+  border: 1px solid;
+}
+/* La taille et le font ne veux pas ce mettre */
+
+/* Formulaire */
+/* borderà 1 coleur var faite padding de  50 px radduis de 10px */
+
+/* Carde guides
+copier coller de l'autre 
+*/
+
+/* Nos dérnières Publications 
+fond bleu dégradé , titre un fin un peu plus gros que les autres
+3 cards avec une image et un texte + un sowdaow 
+*/
+
+/* carosels 
+4 img 
+plus scroll bar
+*/
