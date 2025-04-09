@@ -6,22 +6,23 @@
     <meta name="description" content="width=device-width, initial-scale=1.0" />
     <title>Contacte voyage</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="contact.css">
+    <script async src="scripts.js"></script>
   </head>
   <body>
-    <!-- 
+    
+
     <div class="share">
         <div class="share-content">
             <div class="share-content-header">
                 Partager
-            <button class="fermer">X</button></div>
+            <button class="fermer closeModal">X</button></div>
             <div class="share-content-body">
                 <button class="bx">Partager sur X</button>
                 <button class="bf">Partager sur Facebook</button>
                 <button class="bp">Partager sur Pinterest</button>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <header class="header">
       <div class="logo">
@@ -79,26 +80,26 @@
       <form action="contact.html" methode="POST">
         <div class="nom">
           <label class="label" for="Identity" id="identity"
-            >Nom et prénom :</label
-          >
+            >Nom et prénom :</label>
           <input class="input" type="text" name="identity" id="identity" />
-        </div>
+         </div>
+
         <div class="tel">
           <label class="label" for="tel" id="tel"
-            >Votre numéro de téléphone :</label
-          >
+            >Votre numéro de téléphone :</label>
           <input class="input" type="number" name="tel" id="tel" />
         </div>
+
         <div class="mail">
           <label class="label" for="mail" id="mail">Votre adresse mail :</label>
           <input class="input" type="mail" name="mail" id="mail" />
         </div>
+
         <div class="boxtext">
-          <label class="label" for="message" id="message"
-            >Votre message :</label
-          >
+          <label class="label" for="message" id="message">Votre message :</label>
           <textarea class="boxmessage" name="message" id="message"></textarea>
         </div>
+
         <div class="confident">
           <input type="checkbox" name="confidentiality" id="confidentiality" />
           <label class="label" for="confidentiality">
@@ -107,10 +108,14 @@
             dispose sur mes données personnelles
           </label>
         </div>
-        <div class="valider">
+        <div class="valide">
           <button class="valider" type="submit">Envoyer mon message</button>
         </div>
       </form>
     </section>
+
+    <button class="btn-share">
+        Partager
+    </button>
   </body>
 </html>

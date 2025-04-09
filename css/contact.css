@@ -5,3 +5,19 @@ section{
     gap: 1 rem;
     justify-content: start;
 }
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: start
+    ;
+}
+
+
+
+
+
+.valider{
+    background-color: orangered;
+   color: var(--color-white); 
+}
