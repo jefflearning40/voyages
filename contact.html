@@ -56,63 +56,63 @@
 <main>
 <section class="formulaire">
     <div class="ariane">
-                <ul class="liens">
-                    <li><a href="index.html">Acceuil</a></li>
-                    <li><a href="">Nous contacter</a></li>
-                </ul>
-                </div>
-                <div class="titre" >
-                    <h1>Ajouter un commentaire</h1>
-                </div>
-                <div class="indication">
-                    <p>
-                        Une question sur une destination, une astuce à partager ou simplement
-                        l’envie de parler voyages ? On adore ça ! Que vous prépariez un tour du
-                        monde ou un week-end à deux pas de chez vous, on est là pour vous
-                        répondre.
-                    </p>
-                    <p>
-                        Remplissez le formulaire ci-dessous ou envoyez-nous un petit
-                        message à contact@voyage.fr. On vous répond dès qu’on revient
-                        d’exploration… ou de notre pause café !
-                    </p>
-                </div>
+        <ul class="liens">
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="">Nous contacter</a></li>
+        </ul>
+    </div>
+    <div class="titre" >
+        <h1>Ajouter un commentaire</h1>
+    </div>
+    <div class="indication">
+        <p>
+            Une question sur une destination, une astuce à partager ou simplement
+            l’envie de parler voyages ? On adore ça ! Que vous prépariez un tour du
+            monde ou un week-end à deux pas de chez vous, on est là pour vous
+            répondre.
+        </p>
+        <p>
+            Remplissez le formulaire ci-dessous ou envoyez-nous un petit
+            message à contact@voyage.fr. On vous répond dès qu’on revient
+            d’exploration… ou de notre pause café !
+        </p>
+    </div>
                 
-                <form action="contact.html" methode="POST">
-                    <div class="nom">
-                        <label class="label" for="Identity" id="identity"
-                        >Nom et prénom :</label>
-                        <input class="input" type="text" name="identity" id="identity" />
-                    </div>
-                    
-                    <div class="tel">
-                        <label class="labeltel" for="tel" id="tel"
-                        >Votre numéro de téléphone :</label>
-                        <input class="inputtel" type="number" name="tel" id="tel" />
-                    </div>
-                    
-                    <div class="mail">
-                        <label class="label" for="mail" id="mail">Votre adresse mail :</label>
-                        <input class="input" type="mail" name="mail" id="mail" />
-                    </div>
-                    
-                    <div class="boxtext">
-                        <label class="label" for="message" id="message">Votre message :</label>
-                        <textarea class="boxmessage" name="message" id="message"></textarea>
-                    </div>
-                    
-                    <div class="confident">
-                        <input type="checkbox" name="confidentiality" id="confidentiality" />
-                        <label class="label" for="confidentiality">
-                            En validant ce formulaire,je reconnais avoir pris connaissance de la
-                            <a href="">politique de confidentialité</a> et des droits dont je
-                            dispose sur mes données personnelles
-                        </label>
-                    </div>
-                    <div class="valide">
-                        <button class="valider" type="submit">Envoyer mon message</button>
-                    </div>
-                </form>
+    <form action="contact.html" methode="POST">
+        <div class="form-group nom">
+            <label class="label" for="Identity" id="identity"
+            >Nom et prénom :</label>
+            <input class="form-control input" type="text" name="identity" id="identity" />
+        </div>
+        
+        <div class="form-group tel">
+            <label class="labeltel" for="tel" id="tel"
+            >Votre numéro de téléphone :</label>
+            <input class="form-control inputtel" type="number" name="tel" id="tel" />
+        </div>
+        
+        <div class="form-group mail">
+            <label class="label" for="mail" id="mail">Votre adresse mail :</label>
+            <input class="form-control input" type="mail" name="mail" id="mail" />
+        </div>
+        
+        <div class="form-group boxtext">
+            <label class="label" for="message" id="message">Votre message :</label>
+            <textarea class="form-control boxmessage" name="message" id="message"></textarea>
+        </div>
+        
+        <div class="form-group confident">
+            <input type="checkbox" name="confidentiality" id="confidentiality" />
+            <label class="label" for="confidentiality">
+                En validant ce formulaire,je reconnais avoir pris connaissance de la
+                <a href="">politique de confidentialité</a> et des droits dont je
+                dispose sur mes données personnelles
+            </label>
+        </div>
+        <div class="form-group valide">
+            <button class="valider" type="submit">Envoyer mon message</button>
+        </div>
+    </form>
     </section>
 </main>
     <button class="btn-share">
