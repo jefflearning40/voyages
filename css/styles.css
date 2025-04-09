@@ -65,19 +65,19 @@ div.titre {
   position: relative;
 } */
 
-/* Bloc main */
+/* Bloc Géneral balise */
+
+/*  body, html, main, section, img, p, ul, li, div */
 
 main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-  height: 100%;
-  width: 100%;
+  gap: var(--gap-all-sm);
+  height: var(--height-all);
+  width: var(--width-all);
 }
-
-/* section */
 
 section {
   gap: 1rem;
@@ -86,15 +86,17 @@ section {
   justify-content: center;
   align-items: center;
   width: 45%;
-  height: 100%;
+  height: var(--height-all);
 }
+
 /* img section */
 
 section img {
-  width: 100%;
+  width: var(--width-all);
   height: auto;
   margin-top: 2rem;
 }
+
 /* fil d'ariane */
 
 .breadcrumb ul {
@@ -111,6 +113,47 @@ section img {
   content: "→";
 }
 
+/* class gloabal */
+.text {
+  font-size: var(--text-md);
+  font-family: var(--font-family-base);
+  list-style: inside;
+  gap: var(--gap-all-sm);
+}
+.titre-global {
+  font-size: 1.5rem;
+  font-family: var(--font-family-title);
+  text-align: center;
+}
+
+.liste {
+  list-style: inside;
+  font-family: var(--font-family-base);
+  display: flex;
+  flex-direction: column;
+
+  text-align: start;
+  gap: var(--gap-all-sm);
+}
+
+.paragraph {
+  font-size: var(--text-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-all-sm);
+}
+
+div > p {
+  font-size: 1rem;
+  text-align: start;
+  font-family: var(--font-family-base);
+}
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 /* sommaire */
 .bloc-sommaire {
   display: flex;
@@ -124,11 +167,6 @@ section img {
   color: var(--color-white);
   padding: 2rem;
   font-size: 1.5rem;
-}
-.title {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 .ligne {
   background-color: var(--color-white);
@@ -156,78 +194,43 @@ section img {
   color: var(--color-white);
 }
 
-/* Texte section  */
+/* form section  */
 
-p.description-img {
-  font-size: 1rem;
-  text-align: start;
-  font-family: var(--font-family-base);
-}
-.liste {
-  font-family: var(--font-family-base);
+.form-commentaire {
   display: flex;
   flex-direction: column;
-  font-size: var(--text-md);
-  text-align: start;
-  gap: 1rem;
+  align-items: start;
+  gap: var(--gap-all-md);
+  width: var(--width-all);
+  height: var(--height-all);
+  border: solid 1px;
+  border-color: var(--color-gris);
+  border-radius: 15px;
+  padding: 3rem;
 }
-.liste > li {
-  list-style: inside;
-  font-family: var(--font-family-base);
-}
-.text {
-  font-size: 1.5rem;
-  text-align: start;
-  gap: 1rem;
-}
-.histoire > h2 {
-  font-size: 1.5rem;
-  font-family: var(--font-family-title);
-  text-align: center;
-}
-div > p {
-  font-size: 1rem;
-  text-align: start;
-  font-family: var(--font-family-base);
-}
-.termal > ul {
-  font-size: 1rem;
-  text-align: start;
-  gap: 1rem;
-  list-style: inside;
-  font-family: var(--font-family-base);
-}
-div.description-img {
+.form-input {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  font-size: 1rem;
-font-family: karla, sans-serif;
+  gap: var(--gap-all-sm);
+  width: var(--width-all);
+  height: var(--height-all);
+  padding-bottom: var(--padding-sm);
 }
 
+.form-input > input {
+  height: 50px;
+  border-radius: 6px;
+  border: 1px solid;
+}
+.form-input > textarea {
+  height: 60px;
+  border-radius: 6px;
+  border: 1px solid;
+}
 /* La taille et le font ne veux pas ce mettre */
-
-
-
 
 /* Formulaire */
 /* borderà 1 coleur var faite padding de  50 px radduis de 10px */
-
-.form-commentaire {
-
-  border: 1px solid var(--color-gris);
-  border-radius: var(--border-radius);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  width: 100%;
-  height: 100%;
-  padding: 2rem;
-}
 
 /* Carde guides
 copier coller de l'autre 
