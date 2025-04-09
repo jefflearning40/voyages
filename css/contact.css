@@ -1,21 +1,32 @@
 /* section */
-section{
-   display:flex;
-   flex-direction: column;
-    gap: 1 rem;
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+   
+}
+
+.liens{
+    display: flex;
+    flex-direction: row;
     justify-content: start;
+    
 }
 
 form{
     display: flex;
     flex-direction: column;
-    justify-content: start
-    ;
+    justify-content: start;
+    gap: 50%;
+
 }
+.nom,.tel,.mail{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 
-
-
-
+}
 
 .valider{
     background-color: orangered;
