@@ -5,8 +5,9 @@
   --color-main: rgba(4, 112, 176, 1);
   --color-orange: rgba(244, 119, 73, 1);
   --color-blue-linair: linear-gradient(
-    90deg,
-    rgba(21, 147, 221, 1) 0%,
+    0deg,
+    rgba(21, 147, 221, 1) 35%,
+    rgba(7, 118, 184, 1) 89%,
     rgba(4, 112, 176, 1) 100%
   );
   --color-white: rgba(255, 255, 255, 1);
@@ -30,7 +31,7 @@
   --padding-lg: 2.5rem; /* 40px */
   --padding-xl: 3.75; /* 60px */
   --padding-xxl: 5rem; /* 80px */
-  
+
   --text-sm: 0.625rem; /* 10px */
   --text-md: 1.25rem; /* 20px */
   --text-lg: 2.5rem; /* 40px */
@@ -40,21 +41,15 @@
 
 /* General */
 
-:root{
-  --height-all:100%;
-  --width-all:100%;
-  --gap-all-sm:1rem;
-  --gap-all-md:2rem;
+:root {
+  --height-all: 100%;
+  --width-all: 100%;
+  --gap-all-sm: 1rem;
+  --gap-all-md: 2rem;
 }
-
-
-
 
 /* Container  */
 
-:root{
-  --padding-all:0 10rem 0 10rem ;
-
-
+:root {
+  --padding-all: 0 10rem 0 10rem;
 }
-

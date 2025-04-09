@@ -3,7 +3,7 @@
 @import url("components/banner.css");
 @import url("contact.css");
 @import url("components/share.css");
-@import url('components/var-sharbtn.css');
+@import url("components/var-sharbtn.css");
 
 /* header */
 
@@ -97,7 +97,6 @@ section img {
   width: var(--width-all);
   height: auto;
   margin-top: 2rem;
- 
 }
 
 /* fil d'ariane */
@@ -213,7 +212,6 @@ div > p {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   padding: 3rem;
-  
 }
 .form-input {
   display: flex;
@@ -225,8 +223,7 @@ div > p {
 }
 
 /* a changer tout en rem */
-²
-.form-input > input  {
+² .form-input > input {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   height: 40px;
   border-radius: 6px;
@@ -238,7 +235,7 @@ div > p {
   border: 1px rgba(255, 255, 255, 1) solid;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
- form > div.form-checkbox{
+form > div.form-checkbox {
   display: flex;
   flex-direction: row;
   gap: var(--gap-all-sm);
@@ -246,11 +243,11 @@ div > p {
   padding: 1rem 0 1rem 0;
   font-family: var(--font-family-base);
   font-size: var(--text-sm);
- }
+}
 
- .btn{
+.btn {
   font-family: var(--font-family-base);
-  padding:20px 60px 20px 60px;
+  padding: 20px 60px 20px 60px;
   background-color: rgba(25, 110, 67, 1);
   border: none;
   border-radius: 15px;
@@ -273,13 +270,58 @@ copier coller de l'autre
   font-size: 1.5rem;
 }
 
-
 /* Nos dérnières Publications 
 fond bleu dégradé , titre un fin un peu plus gros que les autres
 3 cards avec une image et un texte + un sowdaow 
 */
-
+.publications {
+  width: var(--width-all);
+  height: 52rem;
+  background: var(--color-blue-linair);
+  font-family: var(--font-family-base);
+  color: var(--color-white)
+}
+.card {
+  border-radius: 20px;
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+ text-align: center;
+  gap: 2rem;
+  border: 1px solid var(--color-gris);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 21.5rem;
+  height: 28.75rem;
+  color: black;
+}
 /* carosels 
 4 img 
 plus scroll bar
 */
+div.card-titre p {
+   font-size: xx-large;
+   text-align: center;
+   font-family:'Lora';
+}
+div.card-titre p.card-titre-1 {
+font-family: 'karla', sans-serif;
+}
+.voyages {
+  height: 832px;
+  width: 100%;
+  background-color: #f47749;
+  font-family: var(--font-family-titre);
+  color: var(--color-white);
+}
+
+div.card-descrition p{
+  text-align: center;
+}
+
+.card img {
+  height: 345px;
+  width: 345px;
+  margin: 0;
+object-fit: cover;
+z-index: 1;
+}
