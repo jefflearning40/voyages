@@ -57,9 +57,9 @@ body.has-share-open .share {
 }
 .bx{
     border-style: solid;
-    border-color: var(--color-red);
+    border-color: var(--color-black);
     border-radius: 15px;
-    background-color:var(--color-black);
+    background-color:var(--color-gray);
     color:white;
     font-weight: bolder;
     transition: all 1s ease-out;
@@ -67,14 +67,14 @@ body.has-share-open .share {
 .bf{
     border-color:var(--color-black);
     border-radius: 15px;
-    background-color: var(--color-blue);
+    background-color: var(--color-gray);
     color:white;
     font-weight: bolder;
 }
 .bp{
     border-color: var(--color-black);
     border-radius: 15px;
-    background-color: var(--color-red);
+    background-color: var(--color-gray);
     color:var(--color-white);
     font-weight: bolder;
 }
@@ -106,4 +106,9 @@ body.has-share-open .share {
     align-items: center;
 
     cursor: pointer;
+}
+.btn-share{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
