@@ -1,13 +1,22 @@
 /* section */
 @import url("components/bannermedia.css");
+@import url("form.css");
 .formulaire{
     margin-top: 30px;
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: center;
+    height: 100%;
+    width: 700px;
 }
+
+.contact{
+    display: flex;
+    justify-content: center;
+}
+
 
 .liens {
     display: flex;
