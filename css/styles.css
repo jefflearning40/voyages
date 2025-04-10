@@ -3,7 +3,9 @@
 @import url("components/banner.css");
 @import url("contact.css");
 @import url("components/share.css");
-@import url('components/var-sharbtn.css');
+@import url("modifiers.css");
+@import url("components/var-sharbtn.css");
+@import url("components/list-article.css");
 
 /* header */
 
@@ -45,32 +47,11 @@ nav {
   font-weight: 600;
 }
 
-/* Titre + img  */
-/* .image-header {
-  width: 100%;
-  height: 32rem;
-}
-.Titre-site {
-  bottom: 30%;
-  color: var(--color-white);
-  font-size: 2rem;
-  text-align: center;
-  position: absolute;
-}
-div.titre {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  position: relative;
-} */
-
 /* Bloc Géneral balise */
 
 /*  body, html, main, section, img, p, ul, li, div */
 
-main {
+/* .main {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,7 +59,7 @@ main {
   gap: var(--gap-all-sm);
   height: var(--height-all);
   width: var(--width-all);
-}
+} */
 
 section {
   gap: 1rem;
@@ -86,8 +67,9 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 45%;
+  width: 80rem;
   height: var(--height-all);
+  padding: var(--padding-all);
 }
 
 /* img section */
@@ -108,10 +90,15 @@ section img {
   justify-content: flex-start;
 }
 
-.breadcrumb li:not(:last-child)::after {
+.breadcrumb ul li + li:before {
   display: inline-block;
   margin: 0 0.25rem;
   content: "→";
+}
+
+.breadcrumb li a {
+  color: red;
+  text-decoration: none;
 }
 
 /* class gloabal */
@@ -123,7 +110,8 @@ section img {
 }
 .titre-global {
   font-size: 1.5rem;
-  font-family: var(--font-family-title);
+  font-family: var(--font-family-base);
+  font-weight: 600;
   text-align: center;
 }
 
@@ -155,7 +143,31 @@ div > p {
   justify-content: space-between;
 }
 
+
 /* sommaire */
+
+.title-toc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.title-toc .btn-close-toc {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.title-toc .btn-close-toc:before {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: #fff;
+  margin-right: 30px;
+}
+
 .bloc-sommaire {
   display: flex;
   flex-direction: column;
@@ -198,6 +210,7 @@ div > p {
 /* form section  */
 
 .form-commentaire {
+  font-family: var(--font-family-base);
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -205,7 +218,8 @@ div > p {
   width: var(--width-all);
   height: var(--height-all);
   border: solid 1px;
-  border-color: var(--color-gris);
+  border-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   padding: 3rem;
 }
@@ -218,31 +232,118 @@ div > p {
   padding-bottom: var(--padding-sm);
 }
 
+/* a changer tout en rem */
 .form-input > input {
-  height: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 40px;
   border-radius: 6px;
-  border: 1px solid;
+  border: 1px rgba(255, 255, 255, 1) solid;
 }
 .form-input > textarea {
-  height: 60px;
+  height: 200px;
   border-radius: 6px;
-  border: 1px solid;
+  border: 1px rgba(255, 255, 255, 1) solid;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-/* La taille et le font ne veux pas ce mettre */
+form > div.form-checkbox {
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap-all-sm);
+  align-items: center;
+  padding: 1rem 0 1rem 0;
+  font-family: var(--font-family-base);
+  font-size: var(--text-sm);
+}
 
-/* Formulaire */
-/* borderà 1 coleur var faite padding de  50 px radduis de 10px */
+.btn {
+  font-family: var(--font-family-base);
+  padding: 20px 60px 20px 60px;
+  background-color: rgba(25, 110, 67, 1);
+  border: none;
+  border-radius: 15px;
+  color: var(--color-white);
+}
 
 /* Carde guides
 copier coller de l'autre 
 */
+.bloc-voyage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  width: 80rem;
+  background-color: var(--color-orange);
+  border-radius: var(--border-radius);
+  color: var(--color-white);
+  padding: 2rem;
+  font-size: 1.5rem;
+}
 
 /* Nos dérnières Publications 
 fond bleu dégradé , titre un fin un peu plus gros que les autres
 3 cards avec une image et un texte + un sowdaow 
 */
+.publications {
+  width: var(--width-all);
+  height: 52rem;
+  background: var(--color-blue-linair);
+  font-family: var(--font-family-base);
+  color: var(--color-white);
+}
+.cards-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+}
 
+.card {
+  border-radius: 20px;
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+  border: 1px solid var(--color-gris);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 21.5rem;
+  height: 28.75rem;
+  color: black;
+  overflow: hidden;
+}
+
+.card img {
+  /* border-top-left-radius: 20px; */
+  /* border-top-right-radius: 20px; */
+}
 /* carosels 
 4 img 
 plus scroll bar
 */
+div.card-titre p {
+  font-size: xx-large;
+  text-align: center;
+  font-family: "Lora";
+}
+div.card-titre p.card-titre-1 {
+  font-family: "karla", sans-serif;
+}
+.voyages {
+  height: 832px;
+  width: 100%;
+  background-color: #f47749;
+  font-family: var(--font-family-titre);
+  color: var(--color-white);
+}
+
+div.card-descrition p {
+  text-align: center;
+}
+
+.card img {
+  height: 345px;
+  width: 345px;
+  margin: 0;
+  object-fit: cover;
+  z-index: 1;
+}

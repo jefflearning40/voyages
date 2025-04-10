@@ -16,22 +16,30 @@
     />
     <title>site Voyage</title>
   </head>
+
+
   <body>
     <!--header fait par jeff  -->
+  
+    <!-- Header  qui prends en place logo et nav  -->
     <header class="header">
       <div class="logo">
         <img src="assets/logo.png" alt="voyage" class="logo-img" />
       </div>
+
+      <!-- Bloc nav , lien  -->
       <nav class="nav">
         <ul class="nav__list">
           <li><a href="" title="Accueil">Acceuil</a></li>
           <li><a href="" title="Destination">Destination</a></li>
           <li><a href="" title="Conseils de voyage">Conseils de voyage</a></li>
           <li><a href="" title="Evenements">Evenements</a></li>
-          <li><a href="" title="Contacte">Contacte</a></li>
+          <li><a href="" title="Contact">Contacte</a></li>
         </ul>
       </nav>
     </header>
+
+<!-- Elements bannier  -->
     <div class="c-banner">
       <div class="c-banner__title">
         <h1>
@@ -47,7 +55,11 @@
         />
       </div>
     </div>
+
+  
     <main class="main">
+<!-- Lien d'ariane  -->
+  
       <div aria-label="Breadcrumb" class="breadcrumb">
         <ul>
           <li><a href="">Acceuil</a></li>
@@ -59,85 +71,33 @@
           </li>
         </ul>
       </div>
-      <!--<section class="similar-articles">
     
-    <h2>Articles similaires</h2>
-    
-    <div class="articles-list">
-          <div class="articles-list__item">
-            <img
-              src="assets/martinique.png"
-              alt="martinique"
-              width="300"
-              height="300"
-            /><br />
-            <a href="" title=""
-              >Visiter la Martinique: 10 sites incontournables</a
-            >
-          </div>
+     <!--  bloc section content par Nina -->
 
-          <div class="articles-list__item">
-            <img
-              src="assets/panama.png"
-              alt="panama"
-              width="300"
-              height="300"
-            /><br />
-            <a href=""
-              >Que voir au Panama ? Les meilleurs endroits pour un voyage
-              inoubliable</a
-            >
-          </div>
-
-          <div class="articles-list__item">
-            <img
-              src="assets/tunisie.png"
-              alt="tunisie"
-              width="300"
-              height="300"
-            /><br />
-            <a href=""
-              >Rencontre avec un globe trotter tunisien : Ahmed Ferchich</a
-            >
-          </div>
-
-          <div class="articles-list__item">
-            <img
-              src="assets/paris.png"
-              alt="paris"
-              width="400"
-              height="300"
-            /><br />
-            <a href=""></a>
-          </div>
-        </div>
-      </section>
-      bloc section content par Nina -->
-
-      <section class="Voyage-Budapest">
+      <section class="list_acticle">
         <div class="paragraph">
           <p>
             Budapest, le joyau du Danube, est une ville qui a quelque chose pour
-            tous les types de voyageurs : architecture riche, bains thermaux pour
-            une journée relaxante, une histoire qui ne vous laissera pas
+            tous les types de voyageurs : architecture riche, bains thermaux
+            pour une journée relaxante, une histoire qui ne vous laissera pas
             indifférent et une vie culturelle vibrante. Pendant la journée, vous
-            découvrirez une ville amicale pleine d’endroits à visiter, pour faire
-            des emplettes et goûter la meilleure gastronomie. A la nuit tombée,
-            ses sky bars vous aideront à découvrir le rythme qui caractérise
-            Budapest. Si vous vous demandez quoi voir lors de votre voyage à
-            Budapest, voici un guide complet avec les meilleurs endroits et
-            expériences pour que vous profitiez au maximum de votre visite.
+            découvrirez une ville amicale pleine d’endroits à visiter, pour
+            faire des emplettes et goûter la meilleure gastronomie. A la nuit
+            tombée, ses sky bars vous aideront à découvrir le rythme qui
+            caractérise Budapest. Si vous vous demandez quoi voir lors de votre
+            voyage à Budapest, voici un guide complet avec les meilleurs
+            endroits et expériences pour que vous profitiez au maximum de votre
+            visite.
           </p>
         </div>
 
-
         <div class="bloc-sommaire">
-          <div class="title">
+          <div class="title-toc">
             <div class="titre-global">
               <h2>Sommaire</h2>
             </div>
 
-            <div class="ligne">
+            <div class="btn-close-toc">
               <a href="" class="btn-close">Fermer</a>
             </div>
           </div>
@@ -262,7 +222,7 @@
           height="480"
         />
 
-        <div class="paragraph ">
+        <div class="paragraph">
           <p>
             Oubliez les poses forcées, lors de votre voyage Budapest, ce sont
             les moments qui comptent ! Voici quelques endroits qui sont pure
@@ -306,41 +266,107 @@
         </div>
 
         <div class="form-commentaire">
+          <div class="titre-global">
+            <h2>Ajouter un commantaire</h2>
+          </div>
 
-          <h2>Ajouter un commantaire</h2>
-        
           <!-- form fait par jeff-->
           <form action="" methode="POST" class="a-form">
             <div class="form-input">
-              <label for="pseudo" id="pseudo">Pseudonyme <br /></label>
+              <label for="pseudo" id="pseudo">Votre pseudonyme :</label>
               <input type="text" name="pseudo" id="pseudo" required />
             </div>
 
             <div class="form-input">
-              <label for="mail" id="mail">Adresse mail <br /></label>
+              <label for="mail" id="mail">Votre adresse mail :</label>
               <input type="mail" name="mail" id="mail" required />
             </div>
 
             <div class="form-input">
-              <label for="commentaire">Votre commentaire <br /></label>
+              <label for="commentaire">Votre commentaire :</label>
               <textarea id="commentaire" name="commentaire" required>
               </textarea>
             </div>
 
             <div class="form-checkbox">
-              <input type="checkbox" name="rgpd" id="rgpd" />
-              <label for="rgpd" id="rgpd"
-                >En ajoutant un commentaire, je reconnais avoir pris
-                connaissance de la
-                <a href="">Politique de confidentialité</a> et des droits dont
-                je dispose sur mes données personnelles.</label
-              >
+              <input type="checkbox" name="rgpd" id="rgpd" class="liste" />
+              <p>
+                En ajoutant un commentaire, je reconnais avoir pris connaissance
+                de la <a href="">Politique de confidentialité</a> et des droits
+                dont je dispose sur mes données personnelles.
+              </p>
             </div>
 
             <div class="a-form-submit">
-              <button type="submit">Ajouter mon commentaire</button>
+              <button type="submit" class="btn">Ajouter mon commentaire</button>
             </div>
           </form>
+        </div>
+        <div class="bloc-voyage">
+          <div class="title">
+            <div class="a-title">
+              <p>Guides voyage autour</p>
+              <p class="main">De Budapest</p>
+            </div>
+          </div>
+          <div>
+            <ul class="sommaire">
+              <li>
+                <a>Le Balloonfly : prenez de la hauteur !</a>
+              </li>
+              <li>
+                <a href="#thermes">Le Musée des Beaux-Arts et le Műcsarnok</a>
+              </li>
+              <li>
+                <a href="#photos"> Shopping sur Váci utca </a>
+              </li>
+              <li>
+                <a href=""> Une soirée à l'opéra</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="publications">
+        <div class="card-titre">
+          <p class="card-titre-1">Nos dernières</p>
+          <p>Publications</p>
+        </div>
+        <div class="cards-list">
+          <div class="card">
+            <div class="card-img">
+              <img src="assets/martinique-1.png" alt="" />
+            </div>
+            <div class="card-descrition">
+              <p>Visiter la Martinique: 10 sityes incontournables</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="assets/martinique-1.png" alt="" />
+            </div>
+            <div class="card-descrition">
+              <p>Visiter la Martinique: 10 sityes incontournables</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="voyages">
+        <div class="card-titre">
+          <p class="card-titre-1">Nos Idées</p>
+          <p >Voyage</p>
+        </div>
+        <div>
+          <div class="card">
+            <div>
+              <img src="assets/panama-1.png" alt="image de ...." />
+            </div>
+            <div class="card-descrition">
+              <p>Lima,Perou</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
