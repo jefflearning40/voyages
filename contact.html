@@ -1,103 +1,123 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="contact" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="contact" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="width=device-width, initial-scale=1.0" />
     <title>Contacte voyage</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="css/styles.css" />
+    <script async src="scripts.js"></script>
+  </head>
+  <body>
+    
 
     <div class="share">
         <div class="share-content">
-            <div class="share-content-header">Partager</div>
+            <div class="share-content-header">
+                Partager
+            <button class="fermer closeModal">X</button></div>
             <div class="share-content-body">
-                Mes boutons partager
+                <button class="bx">Partager sur X</button>
+                <button class="bf">Partager sur Facebook</button>
+                <button class="bp">Partager sur Pinterest</button>
             </div>
         </div>
     </div>
 
-
     <header class="header">
-        <div class="logo">
-          <img src="assets/logo.png" alt="voyage" class="logo-img" />
+      <div class="logo">
+        <img src="assets/logo.png" alt="voyage" class="logo-img" />
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="" title="Accueil">Acceuil</a></li>
+          <li><a href="" title="Destination">Destination</a></li>
+          <li><a href="" title="Conseils de voyage">Conseils de voyage</a></li>
+          <li><a href="" title="Evenements">Evenements</a></li>
+          <li><a href="" title="Contacte">Contacte</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<div class="c-banner">
+    <div class="c-banner__title">
+        <h1>Contacter notre équipe</h1>
+    </div>
+    <div class="c-banner__background">
+        <img
+        src="assets/backgroud-1.jpg"
+        alt="image de Budapest"
+        class="image-header"
+        />
+    </div>
+</div>
+
+<main>
+<section class="formulaire">
+    <div class="ariane">
+        <ul class="liens">
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="">Nous contacter</a></li>
+        </ul>
+    </div>
+    <div class="titre" >
+        <h1>Ajouter un commentaire</h1>
+    </div>
+    <div class="indication">
+        <p>
+            Une question sur une destination, une astuce à partager ou simplement
+            l’envie de parler voyages ? On adore ça ! Que vous prépariez un tour du
+            monde ou un week-end à deux pas de chez vous, on est là pour vous
+            répondre.
+        </p>
+        <p>
+            Remplissez le formulaire ci-dessous ou envoyez-nous un petit
+            message à contact@voyage.fr. On vous répond dès qu’on revient
+            d’exploration… ou de notre pause café !
+        </p>
+    </div>
+                
+    <form action="contact.html" methode="POST">
+        <div class="form-group nom">
+            <label class="label" for="Identity" id="identity"
+            >Nom et prénom :</label>
+            <input class="form-control input" type="text" name="identity" id="identity" />
         </div>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li><a href="" title="Accueil">Acceuil</a></li>
-            <li><a href="" title="Destination">Destination</a></li>
-            <li><a href="" title="Conseils de voyage">Conseils de voyage</a></li>
-            <li><a href="" title="Evenements">Evenements</a></li>
-            <li><a href="" title="Contacte">Contacte</a></li>
-          </ul>
-        </nav>
-    </header>
-
-
-
-    <main class="main">
-        <div class="c-banner">
-          <div class="c-banner__title">
-            <h1>
-              Voyage à Budapest : Histoire, thermes et recoins inoubliables et
-              recoins inoubliables
-            </h1>
-          </div>
-          <div class="c-banner__background">
-            <img
-              src="assets/backgroud-1.jpg"
-              alt="image de Budapest"
-              class="image-header"
-            />
-          </div>
+        
+        <div class="form-group tel">
+            <label class="labeltel" for="tel" id="tel"
+            >Votre numéro de téléphone :</label>
+            <input class="form-control inputtel" type="number" name="tel" id="tel" />
         </div>
-    </main>
-
-
-
-        <div class="ariane">
-            <ul>
-                <li><a href="index.html">Acceuil</a></li>
-                <li><a href="">Nous contacter</a></li>
-            </ul>
+        
+        <div class="form-group mail">
+            <label class="label" for="mail" id="mail">Votre adresse mail :</label>
+            <input class="form-control input" type="mail" name="mail" id="mail" />
         </div>
-        <div id="titre">
-            <h1>Nous contacter</h1>
+        
+        <div class="form-group boxtext">
+            <label class="label" for="message" id="message">Votre message :</label>
+            <textarea class="form-control boxmessage" name="message" id="message"></textarea>
         </div>
-        <div class="indication">
-            <h2>Pour contacter notre equipe,merci de compléter le formulaire suivant :</h2>
+        
+        <div class="form-group confident">
+            <input type="checkbox" name="confidentiality" id="confidentiality" />
+            <label class="label" for="confidentiality">
+                En validant ce formulaire,je reconnais avoir pris connaissance de la
+                <a href="">politique de confidentialité</a> et des droits dont je
+                dispose sur mes données personnelles
+            </label>
         </div>
-        <main>
-            <form action="contact.html" methode="POST">
-                <div class="nom">
-                    <label class="label" for="Identity" id="identity">Nom et prénom :</label>
-                    <input class="input" type="text" name="identity" id="identity">
-                </div>
-                <div class="tel">
-                    <label class="label" for="tel" id="tel" >Votre numéro de téléphone :</label>
-                    <input class="input" type="number" name="tel" id="tel">
-                </div>
-                <div class="mail">
-                    <label class="label" for="mail" id="mail">Votre adresse mail :</label>
-                    <input class="input" type="mail" name="mail" id="mail">
-                </div>
-                <div class="boxtext">
-                    <label class="label" for="message" id="message">Votre message :</label>
-                    <textarea class="boxmessage" name="message" id="message"></textarea>
-                </div>
-                <div class="confident">
-                    <input type="checkbox" name="confidentiality" id="confidentiality">
-                    <label class="label"for="confidentiality">
-                        En validant ce formulaire,je reconnais avoir pris connaissance de la <a href="">politique de confidentialité</a> et des droits dont je dispose sur mes données personnelles
-                    </label>
-                </div>
-                <div class="valider">
-                    <button class="valider" type="submit">Envoyer mon message</button>
-                </div>
-            </form>
-        </main>
-    
+        <div class="form-group valide">
+            <button class="valider" type="submit">Envoyer mon message</button>
+        </div>
+    </form>
+    </section>
+</main>
+    <button class="btn-share">
+        Partager
+    </button>
+
 </body>
 </html>
