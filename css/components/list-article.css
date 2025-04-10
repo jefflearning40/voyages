@@ -1,12 +1,44 @@
 @import url(../../css/styles.css);
+@import url(../../css/configue.css);
 
-.list_acticle{
-    font-family: var(--font-de);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: var(--gap-all-sm);
-    height: var(--height-all);
-    width: var(--width-all);
+.list_acticle {
+  font-family: var(--font-family-base);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-all-sm);
+  height: var(--height-all);
+  width: 80rem;
+  font-size: var(--font-text-md);
+  padding: var(--padding-general);
+  gap: 1rem;
 }
+
+.list_acticle img {
+  width: var(--width-all);
+  margin-top: 2rem;
+}
+.paragraph {
+  font-size: var(--text-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-all-sm);
+}
+
+.liste {
+  list-style: inside;
+  font-family: var(--font-family-base);
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  gap: var(--gap-all-sm);
+}
+
+.titre_article  {
+    font-size: 1.5rem;
+    font-family: var(--font-family-title);
+    font-weight: var( --font-text-xxl);
+    text-align: center;
+    margin:  1rem 0  1rem 0 ;
+  }
