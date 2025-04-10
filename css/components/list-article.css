@@ -1,0 +1,12 @@
+@import url(../../css/styles.css);
+
+.list_acticle{
+    font-family: var(--font-de);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-all-sm);
+    height: var(--height-all);
+    width: var(--width-all);
+}

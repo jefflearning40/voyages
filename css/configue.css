@@ -1,4 +1,19 @@
 :root {
+  --font-family-title: "Lora", serif;
+  --font-family-base: karla, sans-serif;
+  
+  --height-all: 100%;
+  --width-all: 100%;
+  --gap-all-sm: 1rem;
+  --gap-all-md: 2rem;
+}
+
+
+
+
+:root {
+ 
+
   /*  Partie Couleur */
   --color--gris: rgba(192, 192, 192, 1);
   --color-bleu: #0470b0;
@@ -20,10 +35,6 @@
   --img-bcg: url(../assets/background-1.jpg);
 }
 
-:root {
-  --font-family-title: "Lora", serif;
-  --font-family-base: karla, sans-serif;
-}
 
 :root {
   --padding-sm: 0.625rem; /* 10px */
@@ -41,12 +52,6 @@
 
 /* General */
 
-:root {
-  --height-all: 100%;
-  --width-all: 100%;
-  --gap-all-sm: 1rem;
-  --gap-all-md: 2rem;
-}
 
 /* Container  */
 
