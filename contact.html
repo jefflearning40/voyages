@@ -30,13 +30,14 @@
       </div>
       <nav class="nav">
         <ul class="nav__list">
-          <li><a href="" title="Accueil">Acceuil</a></li>
+          <li><a href="index.html" title="Accueil">Acceuil</a></li>
           <li><a href="" title="Destination">Destination</a></li>
           <li><a href="" title="Conseils de voyage">Conseils de voyage</a></li>
           <li><a href="" title="Evenements">Evenements</a></li>
           <li><a href="" title="Contacte">Contacte</a></li>
         </ul>
     </nav>
+    
 </header>
 
 
@@ -114,10 +115,41 @@
     </form>
     </section>
 </main>
-
+<div class="btnshare">
     <button class="btn-share">
         Partager
     </button>
-
+</div>
+<style>
+.logo {
+    display: flex;
+    justify-content: center;
+    height: 119px;
+    width: 176px;
+    background-color: var(--color-white);
+  }
+  nav {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 119px;
+    width: 100%;
+    color: var(--color-white);
+  }
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+  }
+  .nav__list li a {
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+</style>
 </body>
 </html>
