@@ -1,0 +1,75 @@
+@import url(../styles.css);
+
+.form {
+  font-family: var(--font-family-base);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-all-sm);
+  height: var(--height-all);
+  width: 80rem;
+  font-size: var(--font-text-md);
+  padding: var(--padding-general);
+  gap: var(--gap-all-md);
+  border-radius: var( --border-radius-md);
+}
+.form-bloc {
+  border: none;
+  box-shadow: none;
+}
+
+.form-input > input {
+  box-shadow: var(--box-shadow-black);
+  height: var(--font--text-lg);
+  border-radius: var(--border-raduis-sm);
+  border: var(--border-blanc-solid);
+}
+
+.form-commentaire {
+  font-family: var(--font-family-base);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: var(--gap-all-md);
+  width: var(--width-all);
+  height: var(--height-all);
+  border-color: var(--border-blanc-solid);
+  box-shadow: var(--box-shadow-black);
+  border-radius: var( --border-radius-md);
+  padding: var(--padding-lg);
+}
+.form-input {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-all-sm);
+  width: var(--width-all);
+  height: var(--height-all);
+  padding-bottom: var(--padding-sm);
+}
+.form-input > textarea {
+  height: var(--hauteur-sm);
+  border-radius: var(--border-raduis-sm);
+  border: var(--border-blanc-solid);
+  box-shadow: var(--box-shadow-black);
+}
+
+form > div.form-checkbox {
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap-all-sm);
+  align-items: center;
+  padding: var(--padding-1-0);
+  font-family: var(--font-family-base);
+  font-size: var(--text-sm);
+}
+
+.btn {
+  text-align: center;
+  font-family: var(--font-family-base);
+  padding: var(--padding-btn);
+  background-color: var(--color-btn);
+  border: none;
+  border-radius: var(--border-raduis-btn);
+  color: var(--color-white);
+}

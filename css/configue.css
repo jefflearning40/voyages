@@ -1,60 +1,88 @@
 :root {
-  --font-family-title: "Lora", serif;
-  --font-family-base: karla, sans-serif;
-  
+  --font-family-title: "lora", serif;
+  --font-family-base: "karla", sans-serif;
+
   --height-all: 100%;
   --width-all: 100%;
   --gap-all-sm: 1rem;
   --gap-all-md: 2rem;
 }
 
-
-
-
 :root {
- 
-
-  /*  Partie Couleur */
+  --color-main: rgba(4, 112, 176, 1);
   --color--gris: rgba(192, 192, 192, 1);
   --color-bleu: #0470b0;
-  --color-main: rgba(4, 112, 176, 1);
-  --color-orange: rgba(244, 119, 73, 1);
   --color-blue-linair: linear-gradient(
     0deg,
     rgba(21, 147, 221, 1) 35%,
     rgba(7, 118, 184, 1) 89%,
     rgba(4, 112, 176, 1) 100%
-  );
-  --color-white: rgba(255, 255, 255, 1);
-
-  /* Radius , taille */
-  --border-radius: 10px;
-  --taille-w: 915px;
-  --taille-2-h: 610px;
-
-  --img-bcg: url(../assets/background-1.jpg);
+    );
+    --color-orange: rgba(244, 119, 73, 1);
+    --color-white: rgba(255, 255, 255, 1);
+    
+    
+    /* Radius , taille */
+    
+  }
+  
+  
+  :root {
+    --taille-w: 57rem; 
+    --taille-2-h: 38rem;
+    
+  --font--text-md: 1.25rem; /* 20px */
+  --font--text-lg: 2.5rem; /* 40px */
+  --font--text-xl: 3.75; /* 60px */
+  --font--font-text-xxl:75rem; /* 80px */
+  
 }
 
 
-:root {
-  --padding-sm: 0.625rem; /* 10px */
-  --padding-md: 1.25rem; /* 20px */
-  --padding-lg: 2.5rem; /* 40px */
-  --padding-xl: 3.75; /* 60px */
-  --padding-xxl: 5rem; /* 80px */
 
-  --text-sm: 0.625rem; /* 10px */
-  --text-md: 1.25rem; /* 20px */
-  --text-lg: 2.5rem; /* 40px */
-  --text-xl: 3.75; /* 60px */
-  --text-xxl: 5rem; /* 80px */
+
+:root{
+ 
+  --box-shadow-black:  0 0 10px rgba(0, 0, 0, 0.1);
+
 }
 
-/* General */
+:root {
 
+  --border-blanc-solid:0.063rem rgba(255, 255, 255, 1) solid;
 
-/* Container  */
+}
 
 :root {
-  --padding-all: 0 10rem 0 10rem;
+  
+  --border-raduis-sm:0.375rem; /* 6px*/
+  --border-radius-md: 1rem;  /*16px */
+  
+
+}
+/* padding-all change --padding genral */
+
+:root{
+--padding-general:0 10rem 0 10rem; 
+--padding-1-0:  1rem 0 1rem 0;
+
+
+--padding-sm: 0.625rem; /* 10px */
+--padding-md: 1.25rem; /* 20px */
+--padding-lg: 2.5rem; /* 40px */
+--padding-xl: 3.75; /* 60px */
+--padding-xxl: 5rem; /* 80px */
+}
+/* hauteurs */
+
+:root{
+  --hauteur-sm:12.5rem;   
+}
+
+/* btn de form */
+
+:root{
+--padding-btn: 1.25rem 3.75rem 1.25rem 3.75rem;
+--color-btn:rgba(25, 110, 67, 1);
+--border-raduis-btn:0.938rem;
 }
