@@ -1,19 +1,23 @@
 @import url(../styles.css);
 .header {
-  overflow: hidden;
   display: flex;
   flex-direction: row;
   justify-content: start;
   background-color: var(--color-main);
   height: 8rem;
   gap: 2rem;
+  @media (max-width: 480px) {
+    height: 4rem;
+  }
 }
 .logo {
   display: flex;
   justify-content: center;
-  height: 119px;
-  width: 176px;
+  padding: 2rem;
   background-color: var(--color-white);
+  @media (max-width: 480px) {
+    height:4rem ;
+  }
 }
 nav {
   display: flex;
@@ -22,6 +26,11 @@ nav {
   height: 119px;
   width: 100%;
   color: var(--color-white);
+  @media (max-width: 480px) {
+    font-size: 16px;
+    height: 6rem;
+    
+  }
 }
 .nav__list {
   display: flex;
@@ -30,6 +39,11 @@ nav {
   align-items: center;
   gap: 2rem;
   list-style: none;
+  @media (max-width: 480px) {
+    font-size: 16px;
+    flex-direction: column;
+    gap: 0.65rem;
+  }
 }
 .nav__list li a {
   text-decoration: none;
