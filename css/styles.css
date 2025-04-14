@@ -10,13 +10,11 @@
 @import url("components/form.css");
 @import url(components/header.css);
 
-
-
 /* Bloc Géneral balise */
 
 /*  body, html, main, section, img, p, ul, li, div */
 
- .main {
+.main {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,14 +22,18 @@
   gap: var(--gap-all-sm);
   height: var(--height-all);
   width: var(--width-all);
-} 
+}
 
+.container {
+  justify-items: center;
+  margin: 1rem;
+}
 .titre-global {
   font-size: 1.5rem;
   font-family: var(--font-family-titre);
   font-weight: var(--font-text-xxl);
   text-align: center;
-  margin:  1rem 0  1rem 0 ;
+  margin: 1rem 0 1rem 0;
 }
 
 .title {
@@ -68,7 +70,7 @@ copier coller de l'autre
   flex-direction: column;
   justify-content: flex-start;
   gap: 1rem;
-  width: 80%; 
+  width: 80%;
   background-color: var(--color-orange);
   border-radius: var(--border-radius);
   color: var(--color-white);
@@ -107,7 +109,6 @@ fond bleu dégradé , titre un fin un peu plus gros que les autres
   color: black;
   overflow: hidden;
 }
-
 
 /* carosels 
 4 img 
