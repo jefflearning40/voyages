@@ -68,7 +68,7 @@ copier coller de l'autre
   flex-direction: column;
   justify-content: flex-start;
   gap: 1rem;
-  width: 80rem;
+  width: 80%; 
   background-color: var(--color-orange);
   border-radius: var(--border-radius);
   color: var(--color-white);
