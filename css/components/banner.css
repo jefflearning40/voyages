@@ -7,24 +7,21 @@
     justify-content: flex-end;
 }
 
-
 .c-banner .c-banner__title {
     position: relative;
     z-index: 1;
     display: flex;
     place-content: center;
     text-align: center;
-    padding: var(--padding-xxl) var(--padding-lg);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); 
+    padding: var(--padding-xxl, 2rem) var(--padding-lg, 1rem); /* Ajout de valeurs par défaut */
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
 }
 
 .c-banner .c-banner__title h1 {
     font-size: 60px;
-    color: #fff;     
-    font-family: var(--font-family-title);
+    color: #fff;
+    font-family: var(--font-family-title, Arial, sans-serif); /* Ajout d'une police par défaut */
     max-width: 1000px;
-   
-
 }
 
 .c-banner .c-banner__background {
@@ -38,5 +35,6 @@
 
 .c-banner .c-banner__background img {
     width: 100%;
+    height: 100%; /* Ajout pour s'assurer que l'image couvre tout l'espace */
     object-fit: cover;
 }
