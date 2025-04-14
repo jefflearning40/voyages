@@ -34,6 +34,11 @@
     color: var(--color-white);
     padding: 2rem;
     font-size: 1.5rem;
+    @media (max-width: 480px) {
+     padding: 0.657rem;
+    }
+
+
   }
   .ligne {
     background-color: var(--color-white);
