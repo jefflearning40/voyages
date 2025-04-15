@@ -9,3 +9,6 @@ let closeModal = document.querySelector('.closeModal');
 closeModal.addEventListener("click", function(){
     document.body.classList.remove ("has-share-open");
 });
+
+
+

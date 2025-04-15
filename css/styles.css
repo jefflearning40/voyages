@@ -28,10 +28,11 @@
 }
 
 .container {
-  justify-items: center;
+  width: 80%;
   margin: 7rem;
   @media (max-width: 480px) {
     margin: 1rem;
+   
   }
 }
 .titre-global {
