@@ -7,6 +7,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=5"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="jssheet" href="scripts.js" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,6 +18,8 @@
       href="https://fonts.googleapis.com/css2?family=Girassol&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
     <title>site Voyage</title>
   </head>
 
@@ -39,6 +42,44 @@
           <li><a href="contact.html" title="Contact">Contacte</a></li>
         </ul>
       </nav>
+<div id="menuToggle" class="burger-menu">
+  <input type="checkbox" id="menuCheckbox" />
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+  
+  <ul id="menu">
+    <li>
+            <a href="#Acceuil" > <label for="menuCheckbox" onclick="this.parentNode.click();">Acceuil</label></a>
+          </li>
+          <li>
+            <a href="#Destinations">
+              <label for="menuCheckbox" onclick="this.parentNode.click();">Destinations</label>
+            </a>
+          </li>
+          <li>
+            <a href="#Conseils"class="menuItem">Conseils de voyage</a>
+          </li>
+          <li>
+            <li><label for="menuCheckbox"><a href="#Evenement">Evenements</a></label></li>
+           
+          </li>
+          <li>
+            <label for="menuCheckbox"><a href="#Contact">Contact</a></label>
+          </li>
+        </ul>
+ </div>
     </header>
 
     <!-- Elements bannier  -->
@@ -103,7 +144,7 @@
                 <a href="" class="btn-close">Fermer</a>
               </div>
             </div>
-            <div>
+            <div class="container">
               <ul class="sommaire">
                 <li>
                   <a href="#histoire"
@@ -302,44 +343,47 @@
                 </p>
               </div>
 
-            <div class="a-form-submit ">
-              <button type="submit" class="btn">Ajouter mon commentaire</button>
+              <div class="a-form-submit">
+                <button type="submit" class="btn">
+                  Ajouter mon commentaire
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+        <div class="bloc-voyage">
+          <div class="title">
+            <div class="a-title">
+              <p>Guides voyage autour</p>
+              <p class="main">De Budapest</p>
             </div>
-          </form>
-        </div>
-      </section>
-      <!-- <div class="bloc-voyage">
-        <div class="title">
-          <div class="a-title">
-            <p>Guides voyage autour</p>
-            <p class="main">De Budapest</p>
+          </div>
+          <div>
+            <ul class="sommaire">
+              <li>
+                <a>Le Balloonfly : prenez de la hauteur !</a>
+              </li>
+              <li>
+                <a href="#thermes">Le Musée des Beaux-Arts et le Műcsarnok</a>
+              </li>
+              <li>
+                <a href="#photos"> Shopping sur Váci utca </a>
+              </li>
+              <li>
+                <a href=""> Une soirée à l'opéra</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div>
-          <ul class="sommaire">
-            <li>
-              <a>Le Balloonfly : prenez de la hauteur !</a>
-            </li>
-            <li>
-              <a href="#thermes">Le Musée des Beaux-Arts et le Műcsarnok</a>
-            </li>
-            <li>
-              <a href="#photos"> Shopping sur Váci utca </a>
-            </li>
-            <li>
-              <a href=""> Une soirée à l'opéra</a>
-            </li>
-          </ul>
-        </div>
       </div>
-
+      <!-- 
       <section class="publications">
         <div class="card-titre">
           <p class="card-titre-1">Nos dernières</p>
           <p>Publications</p>
         </div>
         <div class="cards-list">
-          <div class="card">
+          <div class="card fixed-imge">
             <div class="card-img">
               <img src="assets/martinique-1.png" alt="" />
             </div>
@@ -355,10 +399,20 @@
               <p>Visiter la Martinique: 10 sityes incontournables</p>
             </div>
           </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="assets/martinique-1.png" alt="" />
+            </div>
+            <div class="card-descrition">
+              <p>Visiter la Martinique: 10 sityes incontournables</p>
+            </div>
+          </div>
+
         </div>
-      </section> -->
+      </section>  -->
 
       <!-- <section class="voyages">
+      </div>
         <div class="card-titre">
           <p class="card-titre-1">Nos Idées</p>
           <p>Voyage</p>
@@ -372,8 +426,11 @@
               <p>Lima,Perou</p>
             </div>
           </div>
-        </div>
-      </section>  -->
+        </div> 
+        </section>-->
     </main>
+   
+
+
   </body>
 </html>

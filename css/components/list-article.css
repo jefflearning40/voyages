@@ -9,7 +9,6 @@
   align-items: center;
   gap: var(--gap-all-sm);
   height: var(--height-all);
-  width: 80%;
   font-size: var(--font-text-md);
   gap: 1rem;
 }
