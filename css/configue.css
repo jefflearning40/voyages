@@ -10,7 +10,7 @@
 
 :root {
   --color-main: rgba(4, 112, 176, 1);
-  --color--gris: rgba(192, 192, 192, 1);
+  --color-gris: rgba(192, 192, 192, 1);
   --color-bleu: #0470b0;
   --color-blue-linair: linear-gradient(
     0deg,
@@ -23,6 +23,10 @@
     
     
     /* Radius , taille */
+
+    --color-facebook: #4267B2;
+    --color-twitter: #14171A;
+    --color-pinterest: #E60023;
     
   }
   
@@ -82,7 +86,7 @@
 /* btn de form */
 
 :root{
---padding-btn: 1.25rem 3.75rem 1.25rem 3.75rem;
+--padding-btn: 1.15rem 3.2rem 1.15rem 3.2rem;
 --color-btn:rgba(25, 110, 67, 1);
 --border-raduis-btn:0.938rem;
 }

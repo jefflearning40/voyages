@@ -42,6 +42,9 @@
   justify-content: space-between;
 }
 /* fil d'ariane */
+.breadcrumb {
+  margin-bottom: 1rem; /* todo */
+}
 
 .breadcrumb ul {
   margin-top: 2rem;

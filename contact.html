@@ -7,26 +7,37 @@
     <title>Contacte voyage</title>
     <link rel="stylesheet" href="css/styles.css" />
     <script async src="scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Girassol&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet" />
   </head>
   <body>
-    
-
     <div class="share">
-        <div class="share-content">
-            <div class="share-content-header">
-                Partager
-            <button class="fermer closeModal">X</button></div>
-            <div class="share-content-body">
-                <button class="bx">Partager sur X</button>
-                <button class="bf">Partager sur Facebook</button>
-                <button class="bp">Partager sur Pinterest</button>
-            </div>
+      <div class="share-content">
+        <div class="share-content-header">
+          Partager
+          <button class="fermer closeModal">X</button>
         </div>
+        <div class="share-content-body">
+          <a href="#" class="btn btn-x">Partager sur X</a>
+          <a href="#" class="btn btn-facebook">Partager sur Facebook</a>
+          <a href="#" class="btn btn-pinterest">Partager sur Pinterest</a>
+        </div>
+      </div>
     </div>
 
     <header class="header">
       <div class="logo">
-        <img src="assets/logo .webp" alt="logo societé un soleil et un avion" class="logo-img" />
+        <img
+          src="assets/logo .webp"
+          alt="logo societé un soleil et un avion"
+          class="logo-img"
+        />
       </div>
       <nav class="nav">
         <ul class="nav__list">
@@ -36,116 +47,118 @@
           <li><a href="" title="Evenements">Evenements</a></li>
           <li><a href="" title="Contacte">Contacte</a></li>
         </ul>
-    </nav>
-    
-</header>
+      </nav>
+    </header>
 
+    <div class="c-banner">
+        <div class="c-banner__title">
+            <h1>Contacter notre équipe</h1>
 
-<div class="c-banner">
-    <div class="c-banner__title">
-        <h1>Contacter notre équipe</h1>
-    </div>
-    <div class="c-banner__background">
-        <img src="assets/imagebannercontacte.webp" alt="vue panoramique de la ville au bord du fleuve le Danube" class="image-header"/>
-    </div>
-</div>
+        </div>
+        <div class="c-banner__background">
+          <img
+            src="assets/imagebannercontacte.webp"
+            alt="vue panoramique de la ville au bord du fleuve le Danube"
+            class="image-header"
+          />
+        </div>
+      </div>
 
-<main class="contact">
-<section class="formulaire">
-    <div class="ariane">
-        <ul class="liens">
+    <main class="contact">
+      <section class="formulaire">
+        <div class="breadcrumb" aria-label="Breadcrumb">
+          <ul class="liens">
             <li><a href="index.html">Acceuil</a></li>
             <li><a href="">Nous contacter</a></li>
-        </ul>
-    </div>
-    <div class="titre" >
-        <h1>Ajouter un commentaire</h1>
-    </div>
-    <div class="indication">
-        <p>
-            Une question sur une destination, une astuce à partager ou simplement
-            l’envie de parler voyages ? On adore ça ! Que vous prépariez un tour du
-            monde ou un week-end à deux pas de chez vous, on est là pour vous
-            répondre.
-        </p>
-        <p>
-            Remplissez le formulaire ci-dessous ou envoyez-nous un petit message à <a href="contact@voyage.fr" target="_blank">contact@voyage.fr</a>.
-            On vous répond dès qu’on revient d’exploration… ou de notre pause café !
-        </p>
-    </div>
-                
-    <form action="contact.html" methode="POST">
-        <div class="form-group nom">
+          </ul>
+        </div>
+        <div class="titre">
+          <h1>Ajouter un commentaire</h1>
+        </div>
+        <div class="indication">
+          <p>
+            Une question sur une destination, une astuce à partager ou
+            simplement l’envie de parler voyages ? On adore ça ! Que vous
+            prépariez un tour du monde ou un week-end à deux pas de chez vous,
+            on est là pour vous répondre.
+          </p>
+          <p>
+            Remplissez le formulaire ci-dessous ou envoyez-nous un petit message
+            à <a href="contact@voyage.fr" target="_blank">contact@voyage.fr</a>.
+            On vous répond dès qu’on revient d’exploration… ou de notre pause
+            café !
+          </p>
+        </div>
+
+        <form action="contact.html" methode="POST">
+          <div class="form-group nom">
             <label class="label" for="Identity" id="identity"
-            >Nom et prénom :</label>
-            <input class="form-control input" type="text" name="identity" id="identity" />
-        </div>
-        
-        <div class="form-group tel">
+              >Nom et prénom :</label
+            >
+            <input
+              class="form-control input"
+              type="text"
+              name="identity"
+              id="identity"
+            />
+          </div>
+
+          <div class="form-group tel">
             <label class="labeltel" for="tel" id="tel"
-            >Votre numéro de téléphone :</label>
-            <input class="form-control input tel" type="number" name="tel" id="tel" />
-        </div>
-        
-        <div class="form-group mail">
-            <label class="label" for="mail" id="mail">Votre adresse mail :</label>
-            <input class="form-control input" type="email" name="mail" id="mail" />
-        </div>
-        
-        <div class="form-group boxtext">
-            <label class="label" for="message" id="message">Votre message :</label>
-            <textarea class="form-control boxmessage" name="message" id="message"></textarea>
-        </div>
-        
-        <div class="form-group confident">
-            <input type="checkbox" name="confidentiality" id="confidentiality" />
+              >Votre numéro de téléphone :</label
+            >
+            <input
+              class="form-control input tel"
+              type="number"
+              name="tel"
+              id="tel"
+            />
+          </div>
+
+          <div class="form-group mail">
+            <label class="label" for="mail" id="mail"
+              >Votre adresse mail :</label
+            >
+            <input
+              class="form-control input"
+              type="email"
+              name="mail"
+              id="mail"
+            />
+          </div>
+
+          <div class="form-group boxtext">
+            <label class="label" for="message" id="message"
+              >Votre message :</label
+            >
+            <textarea
+              class="form-control boxmessage"
+              name="message"
+              id="message"
+            ></textarea>
+          </div>
+
+          <div class="form-group confident">
+            <input
+              type="checkbox"
+              name="confidentiality"
+              id="confidentiality"
+            />
             <label class="label" for="confidentiality">
-                En validant ce formulaire,je reconnais avoir pris connaissance de la
-                <a href="">politique de confidentialité</a> et des droits dont je
-                dispose sur mes données personnelles
+              En validant ce formulaire,je reconnais avoir pris connaissance de
+              la
+              <a href="">politique de confidentialité</a> et des droits dont je
+              dispose sur mes données personnelles
             </label>
-        </div>
-        <div class="form-groupvalide">
-            <button class="valider" type="submit">Envoyer mon message</button>
-        </div>
-    </form>
-    </section>
-</main>
-<div class="btnshare">
-    <button class="btn-share">
-        Partager
-    </button>
-</div>
-<style>
-.logo {
-    display: flex;
-    justify-content: center;
-    height: 119px;
-    width: 176px;
-    background-color: var(--color-white);
-  }
-  nav {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    height: 119px;
-    width: 100%;
-    color: var(--color-white);
-  }
-  .nav__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    gap: 2rem;
-    list-style: none;
-  }
-  .nav__list li a {
-    text-decoration: none;
-    color: var(--color-white);
-    font-size: 1.2rem;
-    font-weight: 600;
-  }
-</style>
-</body>
+          </div>
+          <div class="form-groupvalide">
+            <button class="btn btn-orange" type="submit">Envoyer mon message</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <div class="btnshare">
+      <button class="btn btn-share">Partager</button>
+    </div>
+  </body>
 </html>

@@ -46,15 +46,12 @@ body.has-share-open .share {
     justify-content: space-between;
     gap:10px;
     font-weight: bolder;
-    
-    
-    
-
-}
+  }
 .share-content-header {
     border-bottom: 1px solid #000000
     
 }
+/* 
 .bx{
     border-style: solid;
     border-color: var(--color-black);
@@ -91,7 +88,7 @@ body.has-share-open .share {
 .bp:hover,.bp:focus{
     background-color:var(--color-white);
     color:var(--color-red);
-}
+} */
 
 .fermer{
     background-color: var(--color-white);
@@ -104,11 +101,42 @@ body.has-share-open .share {
     display: flex;
     justify-content: center;
     align-items: center;
-
     cursor: pointer;
+    transition: linear transform .3s;
+}
+.fermer:hover {
+    transform: scale(1.2);
 }
 .btn-share{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@media (max-width:500px){
+    .share-content-body,
+    .share-content-header {
+        padding: 30px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap:10px;
+        font-weight: bolder;
+      }
+      .share-content {
+        background: #fff;
+        max-width: 1000px;
+        width: 70%;
+    
+        position: absolute;
+    
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-left: 30px;
+        margin-right: 30px;
+        border-radius: 15px;
+    
+    
+    }
+    }
 }
