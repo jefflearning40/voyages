@@ -135,8 +135,11 @@ body.has-share-open .share {
         margin-left: 30px;
         margin-right: 30px;
         border-radius: 15px;
-    
-    
-    }
+        }
+        .share-content-header {
+           
+            flex-direction: row;
+            justify-content: justify;
+            text-align: center;
     }
 }
