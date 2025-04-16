@@ -9,6 +9,7 @@
 @import url("components/bloc-sommair.css");
 @import url("components/form.css");
 @import url(components/header.css);
+@import url(components/publications.css);
 
 /* Bloc Géneral balise */
 
@@ -28,11 +29,18 @@
 }
 
 .container {
-  width: 80%;
-  margin: 7rem;
-  @media (max-width: 480px) {
+  width: 100%;
+  padding: 0 19rem 0 19rem;
+  @media (max-width: 380px) {
     margin: 1rem;
-   
+    width: 100%;
+    padding: 1rem;
+  }
+
+  @media (max-width: 780px) {
+    margin: 1rem;
+    width: 100%;
+    padding: 1rem;
   }
 }
 .titre-global {
@@ -56,6 +64,7 @@
   flex-wrap: wrap;
   list-style: none;
   justify-content: flex-start;
+  padding-bottom: 1rem;
 }
 
 .breadcrumb ul li + li:before {
@@ -65,7 +74,7 @@
 }
 
 .breadcrumb li a {
-  color: red;
+  color: black;
   text-decoration: none;
 }
 
@@ -81,8 +90,10 @@ copier coller de l'autre
   border-radius: var(--border-raduis-sm);
   color: var(--color-white);
   padding: 1rem;
+  /* Le mettre a la taille du container sans le padding */
   gap: 0.657rem;
   width: 100%;
+
   @media (max-width: 480px) {
     font-size: 1rem;
   }
@@ -107,33 +118,6 @@ copier coller de l'autre
 fond bleu dégradé , titre un fin un peu plus gros que les autres
 3 cards avec une image et un texte + un sowdaow 
 */
-.publications {
-  width: var(--width-all);
-  height: 52rem;
-  background: var(--color-blue-linair);
-  font-family: var(--font-family-base);
-  color: var(--color-white);
-}
-.cards-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 30px;
-}
-
-.card {
-  border-radius: 20px;
-  background-color: var(--color-white);
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: 2rem;
-  border: 1px solid var(--color-gris);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 21.5rem;
-  height: 28.75rem;
-  color: black;
-  overflow: hidden;
-}
 
 /* carosels 
 4 img 
@@ -166,9 +150,7 @@ div.card-descrition p {
   object-fit: cover;
   z-index: 1;
 }
-.cards-list
-
-.fixed-image {
+.cards-list .fixed-image {
   position: fixed;
   top: 20px;
   left: 20px;
