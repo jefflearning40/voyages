@@ -1,13 +1,16 @@
 /* section */
 @import url("components/bannermedia.css");
 @import url("form.css");
+h1{
+    font-weight: bolder;
+}
 .formulaire{
     margin-top: 30px;
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     height: 100%;
     width: 700px;
 }
@@ -39,6 +42,7 @@ form{
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+
 
 
 .valider{
@@ -73,3 +77,27 @@ form{
     flex-direction: row;
     justify-content: center;
 }
+.breadcrumbcontact{
+    padding-bottom: 05%;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.titre{
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    padding-bottom: 2%;
+}
+ .indication{
+    padding-top: 2%;
+    padding-bottom: 5%;
+    padding-left: 2%;
+  }
+  .indication_text{
+    padding-top: 1.5%;
+  } 
+ .label{
+    padding-top: 2%;
+    padding-bottom: 2%;
+ }  
