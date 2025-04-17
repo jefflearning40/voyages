@@ -12,6 +12,9 @@
   --color-main: rgba(4, 112, 176, 1);
   --color-gris: rgba(192, 192, 192, 1);
   --color-bleu: #0470b0;
+  --color-orange: rgba(244, 119, 73, 1);
+  --color-white: rgba(255, 255, 255, 1);
+
   --color-blue-linair: linear-gradient(
     0deg,
     rgba(21, 147, 221, 1) 35%,
@@ -25,15 +28,12 @@
     rgba(244, 119, 73, 1) 38%,
     rgba(244, 119, 73, 1) 100%
   );
-  --color-orange: rgba(244, 119, 73, 1);
-  --color-white: rgba(255, 255, 255, 1);
 
   /* Radius , taille */
 }
 
 :root {
   --taille-w: 57rem;
-  --taille-2-h: 38rem;
 
   --font--text-md: 1.25rem; /* 20px */
   --font--text-lg: 2.5rem; /* 40px */
