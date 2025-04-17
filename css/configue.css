@@ -17,72 +17,65 @@
     rgba(21, 147, 221, 1) 35%,
     rgba(7, 118, 184, 1) 89%,
     rgba(4, 112, 176, 1) 100%
-    );
-    --color-orange: rgba(244, 119, 73, 1);
-    --color-white: rgba(255, 255, 255, 1);
-    
-    
-    /* Radius , taille */
-    
-  }
-  
-  
-  :root {
-    --taille-w: 57rem; 
-    --taille-2-h: 38rem;
-    
+  );
+
+  --color-orange-linair: linear-gradient(
+    329deg,
+    rgba(158, 80, 52, 1) 0%,
+    rgba(244, 119, 73, 1) 38%,
+    rgba(244, 119, 73, 1) 100%
+  );
+  --color-orange: rgba(244, 119, 73, 1);
+  --color-white: rgba(255, 255, 255, 1);
+
+  /* Radius , taille */
+}
+
+:root {
+  --taille-w: 57rem;
+  --taille-2-h: 38rem;
+
   --font--text-md: 1.25rem; /* 20px */
   --font--text-lg: 2.5rem; /* 40px */
   --font--text-xl: 3.75; /* 60px */
-  --font--font-text-xxl:75rem; /* 80px */
+  --font--font-text-xxl: 75rem; /* 80px */
   --items: 4;
 }
 
-
-
-
-:root{
- 
-  --box-shadow-black:  0 0 10px rgba(0, 0, 0, 0.1);
-
+:root {
+  --box-shadow-black: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 :root {
-
-  --border-blanc-solid:0.063rem rgba(255, 255, 255, 1) solid;
-
+  --border-blanc-solid: 0.063rem rgba(255, 255, 255, 1) solid;
 }
 
 :root {
-  
-  --border-raduis-sm:0.375rem; /* 6px*/
-  --border-radius-md: 1rem;  /*16px */
-  
-
+  --border-raduis-sm: 0.375rem; /* 6px*/
+  --border-radius-md: 1rem; /*16px */
 }
 /* padding-all change --padding genral */
 
-:root{
---padding-general:0 10rem 0 10rem; 
---padding-1-0:  1rem 0 1rem 0;
+:root {
+  --padding-general: 0 10rem 0 10rem;
+  --padding-1-0: 1rem 0 1rem 0;
 
-
---padding-sm: 0.625rem; /* 10px */
---padding-md: 1.25rem; /* 20px */
---padding-lg: 2.5rem; /* 40px */
---padding-xl: 3.75; /* 60px */
---padding-xxl: 5rem; /* 80px */
+  --padding-sm: 0.625rem; /* 10px */
+  --padding-md: 1.25rem; /* 20px */
+  --padding-lg: 2.5rem; /* 40px */
+  --padding-xl: 3.75rem; /* 60px */
+  --padding-xxl: 5rem; /* 80px */
 }
 /* hauteurs */
 
-:root{
-  --hauteur-sm:12.5rem;   
+:root {
+  --hauteur-sm: 12.5rem;
 }
 
 /* btn de form */
 
-:root{
---padding-btn: 1.25rem 3.75rem 1.25rem 3.75rem;
---color-btn:rgba(25, 110, 67, 1);
---border-raduis-btn:0.938rem;
+:root {
+  --padding-btn: 1.25rem 3.75rem 1.25rem 3.75rem;
+  --color-btn: rgba(25, 110, 67, 1);
+  --border-raduis-btn: 0.938rem;
 }

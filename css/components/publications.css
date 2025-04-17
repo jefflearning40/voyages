@@ -60,11 +60,12 @@
 }
 
 .Voyage {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: var(--width-all);
-  background: var(--color-blue-linair);
+  background: var(--color-orange-linair);
   font-family: var(--font-family-base);
   color: var(--color-white);
   padding-top: 5rem;
