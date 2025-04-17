@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Destinations</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="assets/logo.png" alt="voyage" class="logo-img" />
+      </div>
+
+      <!-- Bloc nav , lien  -->
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="" title="Accueil">Acceuil</a></li>
+          <li>
+            <a href="destination.html" title="Destination">Destination</a>
+          </li>
+          <li><a href="" title="Conseils de voyage">Conseils de voyage</a></li>
+          <li><a href="" title="Evenements">Evenements</a></li>
+          <li><a href="" title="Contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="menuToggle" class="burger-menu">
+        <input type="checkbox" id="menuCheckbox" />
+        <!--
+      Some spans to act as a hamburger.
+      
+      They are acting like a real hamburger,
+      not that McDonalds stuff.
+      -->
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <!--
+      Too bad the menu has to be inside of the button
+      but hey, it's pure CSS magic.
+      -->
+
+        <ul id="menu">
+          <li>
+            <a href="#Acceuil">
+              <label for="menuCheckbox" onclick="this.parentNode.click();"
+                >Acceuil</label
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#Destinations">
+              <label for="menuCheckbox" onclick="this.parentNode.click();"
+                >Destinations</label
+              >
+            </a>
+          </li>
+          <li>
+            <a href="#Conseils" class="menuItem">Conseils de voyage</a>
+          </li>
+
+          <li>
+            <label for="menuCheckbox"
+              ><a href="#Evenement">Evenements</a></label
+            >
+          </li>
+
+          <li>
+            <label for="menuCheckbox"><a href="#Contact">Contact</a></label>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="c-banner">
+        <div class="c-banner__title">
+          <h1>
+            Voyage à Budapest : Histoire, thermes et recoins inoubliables et
+            recoins inoubliables
+          </h1>
+        </div>
+        <div class="c-banner__background">
+          <img
+            src="assets/backgroud-1.jpg"
+            alt="image de Budapest"
+            class="image-header"
+          />
+        </div>
+      </div>
+      <main>
+        <section class="destinations">
+
+        </section>
+      </main>
+  </body>
+</html>

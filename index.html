@@ -39,10 +39,10 @@
       <nav class="nav">
         <ul class="nav__list">
           <li><a href="" title="Accueil">Acceuil</a></li>
-          <li><a href="" title="Destination">Destination</a></li>
+          <li><a href="destination.html" title="Destination">Destination</a></li>
           <li><a href="" title="Conseils de voyage">Conseils de voyage</a></li>
           <li><a href="" title="Evenements">Evenements</a></li>
-          <li><a href="" title="Contact">Contacte</a></li>
+          <li><a href="" title="Contact">Contact</a></li>
         </ul>
       </nav>
       <div id="menuToggle" class="burger-menu">
@@ -112,7 +112,7 @@
     </div>
 
     <main class="main">
-      <div class="container">
+      <div class="container -article">
         <!-- Lien d'ariane  -->
 
         <div aria-label="Breadcrumb" class="breadcrumb">
@@ -173,11 +173,13 @@
             </ul>
           </div>
           <article class="articl-list_bud">
-            <img
-              class="img"
-              src="assets/image 9.jpg"
-              alt="image de Budapest est de son monument princiapal"
-            />
+            <div class="img_article">
+              <img
+                class="img"
+                src="assets/image 9.jpg"
+                alt="image de Budapest est de son monument princiapal"
+              />
+            </div>
             <div class="titre_article">
               <h2>Les 10 lieux incontournables de Budapest</h2>
             </div>
@@ -222,11 +224,13 @@
             <div class="titre_article">
               <h2>Budapest, la reine des villes thermales</h2>
             </div>
-            <img
-              src="assets/image 10.jpg"
-              class="img"
-              alt="image de la reine des sources thermales a Budapest"
-            />
+            <div class="img_article">
+              <img
+                src="assets/image 10.jpg"
+                class="img"
+                alt="image de la reine des sources thermales a Budapest"
+              />
+            </div>
             <div class="text">
               <p>
                 Un voyage à Budapest n’est pas complet sans un bain thermal
@@ -274,12 +278,13 @@
                 mobile
               </h2>
             </div>
-
-            <img
-              src="assets/image 11.jpg"
-              class="img"
-              alt="img de Budapest vues"
-            />
+            <div class="img_article">
+              <img
+                src="assets/image 11.jpg"
+                class="img"
+                alt="img de Budapest vues"
+              />
+            </div>
 
             <div class="paragraph">
               <p>
@@ -393,78 +398,94 @@
 
       <section class="publications">
         <div class="container">
-          <div class="list_card">
-            <div class="card-titre">
-              <p class="card-titre-1">Nos dernières</p>
-              <p>Publications</p>
+          <div class="card-titre">
+            <p class="card-titre-1">Nos dernières</p>
+            <p>Publications</p>
+          </div>
+
+          <div class="cards-list">
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/martinique-1.png" alt="" />
+              </div>
+              <div class="card-descrition">
+                <p>Visiter la Martinique: 10 sityes incontournables</p>
+              </div>
             </div>
 
-            <div class="cards-list">
-              <div class="card">
-                <div class="card-img">
-                  <img src="assets/martinique-1.png" alt="" />
-                </div>
-                <div class="card-descrition">
-                  <p>Visiter la Martinique: 10 sityes incontournables</p>
-                </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/martinique-1.png" alt="" />
               </div>
-
-              <div class="card">
-                <div class="card-img">
-                  <img src="assets/martinique-1.png" alt="" />
-                </div>
-                <div class="card-descrition">
-                  <p>Visiter la Martinique: 10 sites incontournables</p>
-                </div>
+              <div class="card-descrition">
+                <p>Visiter la Martinique: 10 sites incontournables</p>
               </div>
+            </div>
 
-              <div class="card">
-                <div class="card-img">
-                  <img src="assets/martinique-1.png" alt="" />
-                </div>
-                <div class="card-descrition">
-                  <p>Visiter la Martinique: 10 sites incontournables</p>
-                </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/martinique-1.png" alt="" />
+              </div>
+              <div class="card-descrition">
+                <p>Visiter la Martinique: 10 sites incontournables</p>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <section class="Voyage">
         <div class="container">
-          <div class="list_card-voyage">
-            <div class="card-titre">
-              <p class="card-titre-1">Nos idées</p>
-              <p>Voyage</p>
-            </div>
-            <div class="cards-list">
-              <div class="card">
-                <div class="card-img">
-                  <img src="assets/martinique-1.png" alt="" />
-                </div>
-                <div class="card-descrition">
-                  <p>Visiter la Martinique: 10 sityes incontournables</p>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="card-img">
-                  <img src="assets/martinique-1.png" alt="" />
-                </div>
-                <div class="card-descrition">
-                  <p>Visiter la Martinique: 10 sites incontournables</p>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-img">
-                  <img src="assets/martinique-1.png" alt="" />
-                </div>
-                <div class="card-descrition">
-                  <p>Visiter la Martinique: 10 sites incontournables</p>
-                </div>
-              </div>
-            </div>
+          <div class="card-titre">
+            <p class="card-titre-1">Nos dernières</p>
+            <p>Publications</p>
           </div>
+
+          <div class="Carosel-lists">
+
+            <div class=" card slide">
+              <div class="card-img">
+                <img src="assets/martinique-1.png" alt="" />
+              </div>
+              <div class="card-descrition">
+                <p>Visiter la Martinique: 10 sityes incontournables</p>
+              </div>
+            </div>
+
+            <div class="card slide">
+              <div class="card-img">
+                <img src="assets/martinique-1.png" alt="" />
+              </div>
+              <div class="card-descrition">
+                <p>Visiter la Martinique: 10 sites incontournables</p>
+              </div>
+            </div>
+
+            <div class="card slide">
+              <div class="card-img">
+                <img src="assets/martinique-1.png" alt="" />
+              </div>
+              <div class="card-descrition">
+                <p>Visiter la Martinique: 10 sites incontournables</p>
+              </div>
+            </div>
+            <div class="card slide">
+              <div class="card-img">
+                <img src="assets/martinique-1.png" alt="" />
+              </div>
+              <div class="card-descrition">
+                <p>Visiter la Martinique: 10 sites incontournables</p>
+              </div>
+            </div>
+            <div class="card slide">
+              <div class="card-img">
+                <img src="assets/martinique-1.png" alt="" />
+              </div>
+              <div class="card-descrition">
+                <p>Visiter la Martinique: 10 sites incontournables</p>
+              </div>
+            </div>
+            
         </div>
       </section>
     </main>

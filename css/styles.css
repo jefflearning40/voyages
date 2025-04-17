@@ -8,8 +8,9 @@
 @import url("components/list-article.css");
 @import url("components/bloc-sommair.css");
 @import url("components/form.css");
-@import url(components/header.css);
-@import url(components/publications.css);
+@import url("components/header.css");
+@import url("components/publications.css");
+@import url("components/voyage.css");
 
 /* Bloc Géneral balise */
 
@@ -30,18 +31,17 @@
 
 .container {
   width: 100%;
-  padding: 0 19rem 0 19rem;
-  @media (max-width: 380px) {
-    margin: 1rem;
-    width: 100%;
-    padding: 1rem;
-  }
+  padding: 0 60px 0 60px;
+  margin: 0 auto;
 
-  @media (max-width: 780px) {
-    margin: 1rem;
-    width: 100%;
-    padding: 1rem;
+  @media (max-width: 768px) {
+    padding-left: 20px;
+    padding-right: 20px;
   }
+}
+
+.container.-article {
+  max-width: 1000px;
 }
 .titre-global {
   font-size: 1.5rem;
@@ -141,17 +141,4 @@ div.card-titre p.card-titre-1 {
 
 div.card-descrition p {
   text-align: center;
-}
-
-.card img {
-  height: 345px;
-  width: 345px;
-  margin: 0;
-  object-fit: cover;
-  z-index: 1;
-}
-.cards-list .fixed-image {
-  position: fixed;
-  top: 20px;
-  left: 20px;
 }

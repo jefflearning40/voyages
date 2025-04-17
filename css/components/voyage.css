@@ -1,0 +1,31 @@
+.Voyage {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: var(--width-all);
+  background: var(--color-orange-linair);
+  font-family: var(--font-family-base);
+  color: var(--color-white);
+  padding: 5rem 0;
+}
+
+.Carosel-lists {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  gap: 2rem;
+  scroll-snap-type: x proximity;
+  overflow-x: auto;
+}
+
+.slide {
+    width: 200px;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    scroll-snap-align: end start;
+}
+.card-titre + .Carosel-lists {
+  margin-top: var(--padding-lg);
+}

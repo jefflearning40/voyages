@@ -6,37 +6,14 @@
   background: var(--color-blue-linair);
   font-family: var(--font-family-base);
   color: var(--color-white);
-  padding-top: 5rem;
+  padding: 5rem 0;
 }
+
 .cards-list {
   display: flex;
   flex-direction: row;
   gap: var(--gap-all-md);
-  padding: 2rem;
-  justify-content: center;
-}
-
-.list_card{
-  display: flex;
-  gap: 1rem;
-  flex-direction: column;
-}
-
-@media (max-width: 1000px) {
-  .cards-list {
-    display: flex;
-    overflow-x: auto;
-    /* Pour coller au bord de l'écran on applique une marge négative */
-
-    margin: -2rem;
-    /* On aimante le défilement */
-    scroll-snap-type: x proximity;
-  }
-  .card {
-    /* Permet d'"aimanter" l'élément quand on défile */
-    scroll-snap-align: center;
-    min-width: 20rem;
-  }
+  /* padding: 2rem; */
 }
 
 .card {
@@ -48,10 +25,46 @@
   gap: 2rem;
   border: 1px solid var(--color-gris);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 21.5rem;
-  height: 28.75rem;
+  /* min-width: 21.5rem;
+  min-height: 28.75rem; */
   color: black;
+}
+
+@media (max-width: 768px) {
+  .cards-list {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    display: flex;
+    overflow-x: scroll;
+    flex-direction: row;
+    scroll-snap-type: x proximity;
+
+    /* Pour coller au bord de l'écran on applique une marge négative */
+
+    margin: -1rem;
+    /* On aimante le défilement */
+  }
+
+  .card {
+    /* Permet d'"aimanter" l'élément quand on défile */
+    /* min-width: 20rem; */
+    width: 200px;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    scroll-snap-align: end start;
+  }
+}
+.card-img {
   overflow: hidden;
+}
+
+.card-img img {
+  object-fit: fill;
+  aspect-ratio: 1/1;
+  width: 100%;
+  border-top-left-radius: var(--border-radius-md);
+  border-top-right-radius: var(--border-radius-md);
 }
 
 .card-descrition {
@@ -59,14 +72,6 @@
   text-align: center;
 }
 
-.Voyage {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: var(--width-all);
-  background: var(--color-orange-linair);
-  font-family: var(--font-family-base);
-  color: var(--color-white);
-  padding-top: 5rem;
+.card-titre + .cards-list {
+  margin-top: var(--padding-lg);
 }

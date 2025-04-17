@@ -10,8 +10,21 @@
   gap: 1rem;
 }
 
-.img {
-  max-width: 100%;
+.img_article {
+  margin: auto;
+  width: 100%;
+  position: relative;
+}
+
+.img_article .img {
+  aspect-ratio: 16/9;
+}
+
+@media (min-width: 380px) {
+  .img {
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 .paragraph {
