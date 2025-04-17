@@ -55,8 +55,8 @@
         border-top-left-radius: var(--border-radius-md);
         border-top-right-radius: var(--border-radius-md);
         border-bottom-left-radius:0;
-
-        
+        padding: var(--padding-sm);
+        gap: var(--padding-sm);
 
     }
 
