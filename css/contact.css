@@ -1,23 +1,11 @@
 /* section */
-@import url("components/bannermedia.css");
-@import url("form.css");
 h1{
     font-weight: bolder;
 }
-.formulaire{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
-    height: 100%;
-    max-width: 700px;
-}
 
-.contact{
-    display: flex;
-    justify-content: center;
+.formulaire{
+    margin: 30px auto;
+    max-width: 700px;
 }
 
 
@@ -76,6 +64,7 @@ form{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding:2% 2%;
 }
 .breadcrumbcontact{
     padding-bottom: 05%;
@@ -101,3 +90,15 @@ form{
     padding-top: 2%;
     padding-bottom: 2%;
  }  
+ 
+ .law{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+ }
+ .lawer{
+    text-decoration: none;
+    text-decoration-color: white;
+    font-size: var(--font--text-md);
+ }
