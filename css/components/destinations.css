@@ -1,0 +1,19 @@
+.destinations {
+  background-color: aliceblue;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-all-sm);
+  height: var(--height-all);
+  width: var(--width-all);
+}
+
+.slides_list {
+  padding: 2rem;
+  justify-content: center;
+  display: grid; /* Active le mode Grid */
+  gap: 20px; /* Ajoute 20px de marge */
+  grid-template-columns: repeat(3, 1fr);
+}
