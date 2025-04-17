@@ -9,6 +9,13 @@
        height: 40%;
         
     }
+    @media (max-width: 380px) {
+    font-size: 1rem;
+      }
+    
+      @media (max-width: 780px) {
+      
+      }
 
 }
 
@@ -27,7 +34,10 @@
     color: #fff;
     font-family: var(--font-family-title), Arial, sans-serif; 
     max-width: 1000px;
- 
+    @media (max-width: 780px){
+        font-size: 24px;
+         
+    }
 }
 
 .c-banner .c-banner__background {

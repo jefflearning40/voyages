@@ -1,0 +1,72 @@
+.publications {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: var(--width-all);
+  background: var(--color-blue-linair);
+  font-family: var(--font-family-base);
+  color: var(--color-white);
+  padding-top: 5rem;
+}
+.cards-list {
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap-all-md);
+  padding: 2rem;
+  justify-content: center;
+}
+
+.list_card{
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+@media (max-width: 1000px) {
+  .cards-list {
+    display: flex;
+    overflow-x: auto;
+    /* Pour coller au bord de l'écran on applique une marge négative */
+
+    margin: -2rem;
+    /* On aimante le défilement */
+    scroll-snap-type: x proximity;
+  }
+  .card {
+    /* Permet d'"aimanter" l'élément quand on défile */
+    scroll-snap-align: center;
+    min-width: 20rem;
+  }
+}
+
+.card {
+  border-radius: 20px;
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+  border: 1px solid var(--color-gris);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 21.5rem;
+  height: 28.75rem;
+  color: black;
+  overflow: hidden;
+}
+
+.card-descrition {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.Voyage {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: var(--width-all);
+  background: var(--color-orange-linair);
+  font-family: var(--font-family-base);
+  color: var(--color-white);
+  padding-top: 5rem;
+}

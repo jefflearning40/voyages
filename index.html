@@ -7,6 +7,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=5"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/modifiers.css" />
     <link rel="jssheet" href="scripts.js" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,8 +19,10 @@
       href="https://fonts.googleapis.com/css2?family=Girassol&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  </head>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <title>site Voyage</title>
   </head>
 
@@ -42,44 +45,53 @@
           <li><a href="contact.html" title="Contact">Contacte</a></li>
         </ul>
       </nav>
-<div id="menuToggle" class="burger-menu">
-  <input type="checkbox" id="menuCheckbox" />
-    <!--
+      <div id="menuToggle" class="burger-menu">
+        <input type="checkbox" id="menuCheckbox" />
+        <!--
     Some spans to act as a hamburger.
     
     They are acting like a real hamburger,
     not that McDonalds stuff.
     -->
-    <span></span>
-    <span></span>
-    <span></span>
-    
-    <!--
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <!--
     Too bad the menu has to be inside of the button
     but hey, it's pure CSS magic.
     -->
-  
-  <ul id="menu">
-    <li>
-            <a href="#Acceuil" > <label for="menuCheckbox" onclick="this.parentNode.click();">Acceuil</label></a>
+
+        <ul id="menu">
+          <li>
+            <a href="#Acceuil">
+              <label for="menuCheckbox" onclick="this.parentNode.click();"
+                >Acceuil</label
+              ></a
+            >
           </li>
           <li>
             <a href="#Destinations">
-              <label for="menuCheckbox" onclick="this.parentNode.click();">Destinations</label>
+              <label for="menuCheckbox" onclick="this.parentNode.click();"
+                >Destinations</label
+              >
             </a>
           </li>
           <li>
-            <a href="#Conseils"class="menuItem">Conseils de voyage</a>
+            <a href="#Conseils" class="menuItem">Conseils de voyage</a>
           </li>
+
           <li>
-            <li><label for="menuCheckbox"><a href="#Evenement">Evenements</a></label></li>
-           
+            <label for="menuCheckbox"
+              ><a href="#Evenement">Evenements</a></label
+            >
           </li>
+
           <li>
             <label for="menuCheckbox"><a href="#Contact">Contact</a></label>
           </li>
         </ul>
- </div>
+      </div>
     </header>
 
     <!-- Elements bannier  -->
@@ -144,28 +156,25 @@
                 <a href="" class="btn-close">Fermer</a>
               </div>
             </div>
-            <div class="container">
-              <ul class="sommaire">
-                <li>
-                  <a href="#histoire"
-                    >Les 10 lieux incontournables de Budapest</a
-                  >
-                </li>
-                <li>
-                  <a href="#thermes">Budapest, la reine des villes thermales</a>
-                </li>
-                <li>
-                  <a href="#photos"
-                    >Budapest en photos : les selfies indispensables pour votre
-                    mobile
-                  </a>
-                </li>
-              </ul>
-            </div>
+
+            <ul class="sommaire">
+              <li>
+                <a href="#histoire">Les 10 lieux incontournables de Budapest</a>
+              </li>
+              <li>
+                <a href="#thermes">Budapest, la reine des villes thermales</a>
+              </li>
+              <li>
+                <a href="#photos"
+                  >Budapest en photos : les selfies indispensables pour votre
+                  mobile
+                </a>
+              </li>
+            </ul>
           </div>
           <article class="articl-list_bud">
             <img
-              class=""
+              class="img"
               src="assets/image-9.webp"
               alt="image de Budapest est de son monument principal"
             />
@@ -215,6 +224,7 @@
             </div>
             <img
               src="assets/image-10.webp"
+              class="img"
               alt="image de la reine des sources thermales a Budapest"
             />
             <div class="text">
@@ -265,7 +275,11 @@
               </h2>
             </div>
 
-            <img src="assets/image-11.webp" alt="img de Budapest vues" />
+            <img
+              src="assets/image-11.webp"
+              class="img"
+              alt="img de Budapest vues"
+            />
 
             <div class="paragraph">
               <p>
@@ -376,61 +390,83 @@
           </div>
         </div>
       </div>
-      <!-- 
+
       <section class="publications">
-        <div class="card-titre">
-          <p class="card-titre-1">Nos dernières</p>
-          <p>Publications</p>
-        </div>
-        <div class="cards-list">
-          <div class="card fixed-imge">
-            <div class="card-img">
-              <img src="assets/martinique-1.png" alt="" />
+        <div class="container">
+          <div class="list_card">
+            <div class="card-titre">
+              <p class="card-titre-1">Nos dernières</p>
+              <p>Publications</p>
             </div>
-            <div class="card-descrition">
-              <p>Visiter la Martinique: 10 sityes incontournables</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-img">
-              <img src="assets/martinique-1.png" alt="" />
-            </div>
-            <div class="card-descrition">
-              <p>Visiter la Martinique: 10 sityes incontournables</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-img">
-              <img src="assets/martinique-1.png" alt="" />
-            </div>
-            <div class="card-descrition">
-              <p>Visiter la Martinique: 10 sityes incontournables</p>
-            </div>
-          </div>
 
-        </div>
-      </section>  -->
+            <div class="cards-list">
+              <div class="card">
+                <div class="card-img">
+                  <img src="assets/martinique-1.png" alt="" />
+                </div>
+                <div class="card-descrition">
+                  <p>Visiter la Martinique: 10 sityes incontournables</p>
+                </div>
+              </div>
 
-      <!-- <section class="voyages">
-      </div>
-        <div class="card-titre">
-          <p class="card-titre-1">Nos Idées</p>
-          <p>Voyage</p>
-        </div>
-        <div>
-          <div class="card">
-            <div>
-              <img src="assets/panama-1.png" alt="image de ...." />
-            </div>
-            <div class="card-descrition">
-              <p>Lima,Perou</p>
+              <div class="card">
+                <div class="card-img">
+                  <img src="assets/martinique-1.png" alt="" />
+                </div>
+                <div class="card-descrition">
+                  <p>Visiter la Martinique: 10 sites incontournables</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-img">
+                  <img src="assets/martinique-1.png" alt="" />
+                </div>
+                <div class="card-descrition">
+                  <p>Visiter la Martinique: 10 sites incontournables</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div> 
-        </section>-->
+        </div>
+      </section>
+      <section class="Voyage">
+        <div class="container">
+          <div class="list_card-voyage">
+            <div class="card-titre">
+              <p class="card-titre-1">Nos idées</p>
+              <p>Voyage</p>
+            </div>
+            <div class="cards-list">
+              <div class="card">
+                <div class="card-img">
+                  <img src="assets/martinique-1.png" alt="" />
+                </div>
+                <div class="card-descrition">
+                  <p>Visiter la Martinique: 10 sityes incontournables</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-img">
+                  <img src="assets/martinique-1.png" alt="" />
+                </div>
+                <div class="card-descrition">
+                  <p>Visiter la Martinique: 10 sites incontournables</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-img">
+                  <img src="assets/martinique-1.png" alt="" />
+                </div>
+                <div class="card-descrition">
+                  <p>Visiter la Martinique: 10 sites incontournables</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-   
-
-
   </body>
 </html>
