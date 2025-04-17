@@ -65,134 +65,137 @@
       </div>
 
     <main class="contact">
-      <section class="formulaire">
-        <div class="breadcrumbcontact" aria-label="Breadcrumb">
-          <ul class="liens">
-            <li><a href="index.html">Acceuil</a></li>
-            <li><a href="">Nous contacter</a></li>
-          </ul>
-        </div>
-        <div class="titre">
-          <h1>Ajouter un commentaire</h1>
-        </div>
-        <div class="indication">
-          <p>
-            Une question sur une destination, une astuce à partager ou
-            simplement l’envie de parler voyages ?<br> On adore ça ! Que vous
-            prépariez un tour du monde ou un week-end à deux pas de chez vous,
-            nous sommes là pour vous répondre. 
-          </p>
-          <p class="indication_text">
-            Remplissez le formulaire ci-dessous ou envoyez-nous un petit message
-            à <a href="contact@voyage.fr" target="_blank">contact@voyage.fr</a>.
-            On vous répond dès notre retour d’exploration… ou de notre pause
-            café !
-          </p>
-        </div>
-
-        <form action="contact.html" methode="POST">
-          <div class="form-group nom">
-            <label class="label" for="Identity" id="identity"
-              >Nom et prénom :</label
-            >
-            <input
-              class="form-control input"
-              type="text"
-              name="identity"
-              id="identity"
-            />
+      <div class="container">
+        <section class="formulaire">
+          <div class="breadcrumbcontact" aria-label="Breadcrumb">
+            <ul class="liens">
+              <li><a href="index.html">Acceuil</a></li>
+              <li><a href="">Nous contacter</a></li>
+            </ul>
+          </div>
+          <div class="titre">
+            <h1>Ajouter un commentaire</h1>
+          </div>
+          <div class="indication">
+            <p>
+              Une question sur une destination, une astuce à partager ou
+              simplement l’envie de parler voyages ?<br> On adore ça ! Que vous
+              prépariez un tour du monde ou un week-end à deux pas de chez vous,
+              nous sommes là pour vous répondre. 
+            </p>
+            <p class="indication_text">
+              Remplissez le formulaire ci-dessous ou envoyez-nous un petit message
+              à <a href="contact@voyage.fr" target="_blank">contact@voyage.fr</a>.
+              On vous répond dès notre retour d’exploration… ou de notre pause
+              café !
+            </p>
           </div>
 
-          <div class="form-group tel">
-            <label class="labeltel" for="tel" id="tel"
-              >Votre numéro de téléphone :</label
-            >
-            <input
-              class="form-control input tel"
-              type="number"
-              name="tel"
-              id="tel"
-            />
-          </div>
+          <form action="contact.html" methode="POST">
+            <div class="form-group nom">
+              <label class="label" for="Identity" id="identity"
+                >Nom et prénom :</label
+              >
+              <input
+                class="form-control input"
+                type="text"
+                name="identity"
+                id="identity"
+              />
+            </div>
 
-          <div class="form-group mail">
-            <label class="label" for="mail" id="mail"
-              >Votre adresse mail :</label
-            >
-            <input
-              class="form-control input"
-              type="email"
-              name="mail"
-              id="mail"
-            />
-          </div>
+            <div class="form-group tel">
+              <label class="labeltel" for="tel" id="tel"
+                >Votre numéro de téléphone :</label
+              >
+              <input
+                class="form-control input tel"
+                type="number"
+                name="tel"
+                id="tel"
+              />
+            </div>
 
-          <div class="form-group boxtext">
-            <label class="label" for="message" id="message"
-              >Votre message :</label
-            >
-            <textarea
-              class="form-control boxmessage"
-              name="message"
-              id="message"
-            ></textarea>
-          </div>
+            <div class="form-group mail">
+              <label class="label" for="mail" id="mail"
+                >Votre adresse mail :</label
+              >
+              <input
+                class="form-control input"
+                type="email"
+                name="mail"
+                id="mail"
+              />
+            </div>
 
-          <div class="form-group confident">
-            <input
-              type="checkbox"
-              name="confidentiality"
-              id="confidentiality"
-            />
-            <label class="label" for="confidentiality">
-              En validant ce formulaire,je reconnais avoir pris connaissance de
-              la
-              <a href="">politique de confidentialité</a> et des droits dont je
-              dispose sur mes données personnelles
-            </label>
-          </div>
-          <div class="form-groupvalide">
-            <button class="btn btn-orange" type="submit">Envoyer mon message</button>
-          </div>
-        </form>
-        
-      </section>
-      
+            <div class="form-group boxtext">
+              <label class="label" for="message" id="message"
+                >Votre message :</label
+              >
+              <textarea
+                class="form-control boxmessage"
+                name="message"
+                id="message"
+              ></textarea>
+            </div>
+
+            <div class="form-group confident">
+              <input
+                type="checkbox"
+                name="confidentiality"
+                id="confidentiality"
+              />
+              <label class="label" for="confidentiality">
+                En validant ce formulaire,je reconnais avoir pris connaissance de
+                la
+                <a href="">politique de confidentialité</a> et des droits dont je
+                dispose sur mes données personnelles
+              </label>
+            </div>
+            <div class="form-groupvalide">
+              <button class="btn btn-orange" type="submit">Envoyer mon message</button>
+            </div>
+          </form>
+          
+        </section>
+      </div>
     </main>
     <div class="locate_us">
-      <div class="container_title">
-        <div class="title_up">
-          <p>Nous</p>
-        </div>
-        <div class="title_down">
-          <p>Situer</p>
-        </div>
-      </div>
-      <div class="body_locate_us">
-        <div class="fram_locate">
-          <div class="adress">
-            <ul>
-              <li><strong>Voyage.fr</strong></li>
-              <li>127 avenue Georges Pompidou</li>
-              <li>75100 Paris</li>
-              <li>Téléphone: 01 75 75 05 75</li>
-              <li>Voyager.fr</li>
-            </ul>
+      <div class="container">
+        <div class="container_title">
+          <div class="title_up">
+            <p>Nous</p>
           </div>
-          <div class="open_time">
-            <ul>
-              <li><strong>Horaires d’ouverture</strong></li>
-              <li>Lundi : 09h - 19h</li>
-              <li>Mardi : 09h - 19h</li>
-              <li>Mercredi : 09h - 19h</li>
-              <li>Jeudi : 09h - 19h</li>
-              <li>Vendredi : 09h - 19h</li>
-              <li>Samedi & Dimanche : fermé</li>
-            </ul>
+          <div class="title_down">
+            <p>Situer</p>
           </div>
         </div>
-        <div class="fram_map">
-          <img class="locate_picture" src="assets/locate.png" alt="place of shop" aria-label="carte de la ville avec l'adresse pointée">
+        <div class="body_locate_us">
+          <div class="fram_locate">
+            <div class="adress">
+              <ul>
+                <li>Voyage.fr</li>
+                <li>127 avenue Georges Pompidou</li>
+                <li>75100 Paris</li>
+                <li>Téléphone: 01 75 75 05 75</li>
+                <li>Voyager.fr</li>
+              </ul>
+            </div>
+            <div class="open_time">
+              <ul>
+                <li>Horaires d’ouverture</li>
+                <li>Lundi : 09h - 19h</li>
+                <li>Mardi : 09h - 19h</li>
+                <li>Mercredi : 09h - 19h</li>
+                <li>Jeudi : 09h - 19h</li>
+                <li>Vendredi : 09h - 19h</li>
+                <li>Samedi & Dimanche : fermé</li>
+              </ul>
+            </div>
+          </div>
+          <div class="fram_map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.265223293943!2d2.3089922999999994!3d48.83407949999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e670462a799ad9%3A0xcb35942d47a28d8a!2sSelectour%20-%20Magiclub%20Voyages!5e0!3m2!1sfr!2sfr!4v1744874594456!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
       </div>
     </div>
