@@ -1,13 +1,13 @@
 /* section */
+h1{
+    font-weight: bolder;
+}
 
 .formulaire{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
+    margin: 30px auto;
+    max-width: 700px;
 }
+
 
 .liens {
     display: flex;
@@ -30,6 +30,7 @@ form{
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+
 
 
 .valider{
@@ -59,3 +60,45 @@ form{
 .form-group.confident {
     flex-direction: row;
 }
+.btnshare{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding:2% 2%;
+}
+.breadcrumbcontact{
+    padding-bottom: 05%;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.titre{
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    padding-bottom: 2%;
+}
+ .indication{
+    padding-top: 2%;
+    padding-bottom: 5%;
+    padding-left: 2%;
+  }
+  .indication_text{
+    padding-top: 1.5%;
+  } 
+ .label{
+    padding-top: 2%;
+    padding-bottom: 2%;
+ }  
+ 
+ .law{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+ }
+ .lawer{
+    text-decoration: none;
+    text-decoration-color: white;
+    font-size: var(--font--text-md);
+ }

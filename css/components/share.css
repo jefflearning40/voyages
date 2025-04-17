@@ -46,53 +46,10 @@ body.has-share-open .share {
     justify-content: space-between;
     gap:10px;
     font-weight: bolder;
-    
-    
-    
-
-}
+  }
 .share-content-header {
     border-bottom: 1px solid #000000
-    
-}
-.bx{
-    border-style: solid;
-    border-color: var(--color-red);
-    border-radius: 15px;
-    background-color:var(--color-black);
-    color:white;
-    font-weight: bolder;
-    transition: all 1s ease-out;
-}
-.bf{
-    border-color:var(--color-black);
-    border-radius: 15px;
-    background-color: var(--color-blue);
-    color:white;
-    font-weight: bolder;
-}
-.bp{
-    border-color: var(--color-black);
-    border-radius: 15px;
-    background-color: var(--color-red);
-    color:var(--color-white);
-    font-weight: bolder;
-}
-
-.bx:hover,.bx:focus{
-    border-color: var(--color-black);
-    background-color:var(--color-white);
-    color:var(--color-black)
-}
-.bf:hover,.bf:focus{
-    background-color:var(--color-white);
-    color:var(--color-blue);
-}
-.bp:hover,.bp:focus{
-    background-color:var(--color-white);
-    color:var(--color-red);
-}
-
+ }
 .fermer{
     background-color: var(--color-white);
     border: unset;
@@ -104,6 +61,56 @@ body.has-share-open .share {
     display: flex;
     justify-content: center;
     align-items: center;
-
     cursor: pointer;
+    transition: linear transform .3s;
+}
+.fermer:hover {
+    transform: scale(1.2);
+}
+.btn-share{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:480px){
+    .share-content-body,
+    .share-content-header {
+          flex-direction: column;
+       }
+      .share-content {
+           width: 50%;
+        }
+        .share-content-header {
+            flex-direction: row;
+            justify-content: justify;
+            text-align: center;
+    }
+}
+@media (max-width:768px){
+    .share-content-body,
+    .share-content-header {
+          flex-direction: column;
+       }
+      .share-content {
+           width: 70%;
+        }
+        .share-content-header {
+            flex-direction: row;
+            justify-content: justify;
+            text-align: center;
+    }
+}
+@media (max-width:968px){
+    .share-content-body,
+    .share-content-header {
+          flex-direction: column;
+       }
+      .share-content {
+           width: 080%;
+        }
+        .share-content-header {
+            flex-direction: row;
+            justify-content: justify;
+            text-align: center;
+    }
 }

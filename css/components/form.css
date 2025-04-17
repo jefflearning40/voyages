@@ -74,4 +74,26 @@ form > div.form-checkbox {
   border: none;
   border-radius: var(--border-raduis-btn);
   color: var(--color-white);
+  text-decoration: none;
+  font-weight: normal;
+  font-size: var(---font-size-base);
+}
+
+.btn.btn-orange {
+  background: var(--color-orange);
+}
+
+.btn.btn-facebook {
+  background: var(--color-facebook);
+  border-radius: 999em;
+}
+
+.btn.btn-pinterest {
+  background: var(--color-pinterest);
+  border-radius: 999em;
+}
+
+.btn.btn-x {
+  background: var(--color-twitter);
+  border-radius: 999em;
 }

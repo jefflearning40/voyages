@@ -10,7 +10,7 @@
 
 :root {
   --color-main: rgba(4, 112, 176, 1);
-  --color--gris: rgba(192, 192, 192, 1);
+  --color-gris: rgba(192, 192, 192, 1);
   --color-bleu: #0470b0;
   --color-blue-linair: linear-gradient(
     0deg,

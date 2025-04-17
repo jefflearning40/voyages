@@ -2,122 +2,208 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="contact" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="page contacte entreprise" />
     <title>Contacte voyage</title>
     <link rel="stylesheet" href="css/styles.css" />
     <script async src="scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Girassol&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet" />
   </head>
   <body>
-    
-
     <div class="share">
-        <div class="share-content">
-            <div class="share-content-header">
-                Partager
-            <button class="fermer closeModal">X</button></div>
-            <div class="share-content-body">
-                <button class="bx">Partager sur X</button>
-                <button class="bf">Partager sur Facebook</button>
-                <button class="bp">Partager sur Pinterest</button>
-            </div>
+      <div class="share-content">
+        <div class="share-content-header">
+          Partager
+          <button class="fermer closeModal" aria-label="vous allez fermer la boite de dialogue de partage">X</button>
         </div>
+        <div class="share-content-body">
+          <a href="#" class="btn btn-x" >Partager sur X</a>
+          <a href="#" class="btn btn-facebook" >Partager sur Facebook</a>
+          <a href="#" class="btn btn-pinterest" >Partager sur Pinterest</a>
+        </div>
+      </div>
     </div>
 
     <header class="header">
       <div class="logo">
-        <img src="assets/logo.png" alt="voyage" class="logo-img" />
+        <img
+          src="assets/logo .webp"
+          aria-label="logo societé un soleil et un avion"
+          class="logo-img"
+        />
       </div>
       <nav class="nav">
         <ul class="nav__list">
-          <li><a href="" title="Accueil">Acceuil</a></li>
+          <li><a href="index.html" title="Accueil">Acceuil</a></li>
           <li><a href="" title="Destination">Destination</a></li>
           <li><a href="" title="Conseils de voyage">Conseils de voyage</a></li>
           <li><a href="" title="Evenements">Evenements</a></li>
           <li><a href="" title="Contacte">Contacte</a></li>
         </ul>
-    </nav>
-</header>
+      </nav>
+    </header>
 
+    <div class="c-banner">
+        <div class="c-banner__title">
+            <h1>Contacter notre équipe</h1>
 
-<div class="c-banner">
-    <div class="c-banner__title">
-        <h1>Contacter notre équipe</h1>
-    </div>
-    <div class="c-banner__background">
-        <img
-        src="assets/backgroud-1.jpg"
-        alt="image de Budapest"
-        class="image-header"
-        />
-    </div>
-</div>
+        </div>
+        <div class="c-banner__background">
+          <img
+            src="assets/imagebannercontacte.webp"
+            alt="vue panoramique de la ville au bord du fleuve le Danube"
+            class="image-header"
+          />
+        </div>
+      </div>
 
-<main>
-<section class="formulaire">
-    <div class="ariane">
-        <ul class="liens">
-            <li><a href="index.html">Acceuil</a></li>
-            <li><a href="">Nous contacter</a></li>
-        </ul>
-    </div>
-    <div class="titre" >
-        <h1>Ajouter un commentaire</h1>
-    </div>
-    <div class="indication">
-        <p>
-            Une question sur une destination, une astuce à partager ou simplement
-            l’envie de parler voyages ? On adore ça ! Que vous prépariez un tour du
-            monde ou un week-end à deux pas de chez vous, on est là pour vous
-            répondre.
-        </p>
-        <p>
-            Remplissez le formulaire ci-dessous ou envoyez-nous un petit
-            message à contact@voyage.fr. On vous répond dès qu’on revient
-            d’exploration… ou de notre pause café !
-        </p>
-    </div>
-                
-    <form action="contact.html" methode="POST">
-        <div class="form-group nom">
-            <label class="label" for="Identity" id="identity"
-            >Nom et prénom :</label>
-            <input class="form-control input" type="text" name="identity" id="identity" />
-        </div>
-        
-        <div class="form-group tel">
-            <label class="labeltel" for="tel" id="tel"
-            >Votre numéro de téléphone :</label>
-            <input class="form-control inputtel" type="number" name="tel" id="tel" />
-        </div>
-        
-        <div class="form-group mail">
-            <label class="label" for="mail" id="mail">Votre adresse mail :</label>
-            <input class="form-control input" type="mail" name="mail" id="mail" />
-        </div>
-        
-        <div class="form-group boxtext">
-            <label class="label" for="message" id="message">Votre message :</label>
-            <textarea class="form-control boxmessage" name="message" id="message"></textarea>
-        </div>
-        
-        <div class="form-group confident">
-            <input type="checkbox" name="confidentiality" id="confidentiality" />
-            <label class="label" for="confidentiality">
-                En validant ce formulaire,je reconnais avoir pris connaissance de la
+      <main class="container">
+        <section class="formulaire">
+          <div class="breadcrumbcontact" aria-label="Breadcrumb">
+            <ul class="liens">
+              <li><a href="index.html">Acceuil</a></li>
+              <li><a href="">Nous contacter</a></li>
+            </ul>
+          </div>
+          <div class="titre">
+            <h1>Ajouter un commentaire</h1>
+          </div>
+          <div class="indication">
+            <p>
+              Une question sur une destination, une astuce à partager ou
+              simplement l’envie de parler voyages ?<br> On adore ça ! Que vous
+              prépariez un tour du monde ou un week-end à deux pas de chez vous,
+              nous sommes là pour vous répondre. 
+            </p>
+            <p class="indication_text">
+              Remplissez le formulaire ci-dessous ou envoyez-nous un petit message
+              à <a href="contact@voyage.fr" target="_blank">contact@voyage.fr</a>.
+              On vous répond dès notre retour d’exploration… ou de notre pause
+              café !
+            </p>
+          </div>
+
+          <form action="contact.html" methode="POST">
+            <div class="form-group nom">
+              <label class="label" for="Identity" id="identity"
+                >Nom et prénom :</label
+              >
+              <input
+                class="form-control input"
+                type="text"
+                name="identity"
+                id="identity"
+              />
+            </div>
+
+            <div class="form-group tel">
+              <label class="labeltel" for="tel" id="tel"
+                >Votre numéro de téléphone :</label
+              >
+              <input
+                class="form-control input tel"
+                type="number"
+                name="tel"
+                id="tel"
+              />
+            </div>
+
+            <div class="form-group mail">
+              <label class="label" for="mail" id="mail"
+                >Votre adresse mail :</label
+              >
+              <input
+                class="form-control input"
+                type="email"
+                name="mail"
+                id="mail"
+              />
+            </div>
+
+            <div class="form-group boxtext">
+              <label class="label" for="message" id="message"
+                >Votre message :</label
+              >
+              <textarea
+                class="form-control boxmessage"
+                name="message"
+                id="message"
+              ></textarea>
+            </div>
+
+            <div class="form-group confident">
+              <input
+                type="checkbox"
+                name="confidentiality"
+                id="confidentiality"
+              />
+              <label class="label" for="confidentiality">
+                En validant ce formulaire,je reconnais avoir pris connaissance de
+                la
                 <a href="">politique de confidentialité</a> et des droits dont je
                 dispose sur mes données personnelles
-            </label>
+              </label>
+            </div>
+            <div class="form-groupvalide">
+              <button class="btn btn-orange" type="submit">Envoyer mon message</button>
+            </div>
+          </form>
+        </section>
+    </main>
+    <div class="locate_us">
+      <div class="container">
+        <div class="container_title">
+          <div class="title_up">
+            <p>Nous</p>
+          </div>
+          <div class="title_down">
+            <p>Situer</p>
+          </div>
         </div>
-        <div class="form-group valide">
-            <button class="valider" type="submit">Envoyer mon message</button>
+        <div class="body_locate_us">
+          <div class="fram_locate">
+            <div class="adress">
+              <ul>
+                <li>Voyage.fr</li>
+                <li>127 avenue Georges Pompidou</li>
+                <li>75100 Paris</li>
+                <li>Téléphone: 01 75 75 05 75</li>
+                <li>Voyager.fr</li>
+              </ul>
+            </div>
+            <div class="open_time">
+              <ul>
+                <li>Horaires d’ouverture</li>
+                <li>Lundi : 09h - 19h</li>
+                <li>Mardi : 09h - 19h</li>
+                <li>Mercredi : 09h - 19h</li>
+                <li>Jeudi : 09h - 19h</li>
+                <li>Vendredi : 09h - 19h</li>
+                <li>Samedi & Dimanche : fermé</li>
+              </ul>
+            </div>
+          </div>
+          <div class="fram_map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.265223293943!2d2.3089922999999994!3d48.83407949999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e670462a799ad9%3A0xcb35942d47a28d8a!2sSelectour%20-%20Magiclub%20Voyages!5e0!3m2!1sfr!2sfr!4v1744874594456!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
-    </form>
-    </section>
-</main>
-    <button class="btn-share">
-        Partager
-    </button>
-
-</body>
+      </div>
+    </div>
+    <div class="btnshare">
+      <button class="btn btn-share">Partager</button>
+    </div>
+    <footer>
+      <div class="law">
+        <p classe="lawer" aria-label="mention legal du travail fait en binôme">Mentions légales:  travail en binôme</p>
+        <p class="year">2025</p>
+      </div>
+    </footer>
+  </body>
 </html>

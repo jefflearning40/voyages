@@ -9,9 +9,9 @@
 @import url("components/bloc-sommair.css");
 @import url("components/form.css");
 @import url("components/header.css");
+@import url("components/locateus.css");
 @import url("components/publications.css");
 @import url("components/voyage.css");
-
 /* Bloc Géneral balise */
 
 /*  body, html, main, section, img, p, ul, li, div */
@@ -43,6 +43,7 @@
 .container.-article {
   max-width: 1000px;
 }
+
 .titre-global {
   font-size: 1.5rem;
   font-family: var(--font-family-titre);
@@ -57,6 +58,9 @@
   justify-content: space-between;
 }
 /* fil d'ariane */
+.breadcrumb {
+  margin-bottom: 1rem; /* todo */
+}
 
 .breadcrumb ul {
   margin-top: 2rem;
