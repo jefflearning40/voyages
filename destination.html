@@ -6,6 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=5"
     />
+    <link rel="jssheet" href="js/burger.js" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Destinations</title>
   </head>
@@ -16,63 +17,56 @@
       </div>
 
       <!-- Bloc nav , lien  -->
-      <nav class="nav">
-        <ul class="nav__list">
-          <li><a href="index.html" title="Accueil">Acceuil</a></li>
-          <li>
+
+      <nav class="header_nav">
+        <div class="overlay-menu-mobile" onclick="closeMenuMobile()"></div>
+        <div class="header_nav_close" onclick="closeMenuMobile()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            className="size-6"
+          >
+            <path
+              fillRule="evenodd"
+              d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"
+              clipRule="evenodd"
+            />
+          </svg>
+        </div>
+        <ul class="header_nav_menu">
+          <li class="header_nav_menu_link">
+            <a href="index.html" title="Accueil">Acceuil</a>
+          </li>
+          <li class="header_nav_menu_link">
             <a href="destination.html" title="Destination">Destination</a>
           </li>
-          <li><a href="" title="Conseils de voyage">Conseils de voyage</a></li>
-          <li><a href="" title="Evenements">Evenements</a></li>
-          <li><a href="contact.html" title="Contact">Contact</a></li>
+          <li class="header_nav_menu_link">
+            <a href="" title="Conseils de voyage">Conseils de voyage</a>
+          </li>
+          <li class="header_nav_menu_link">
+            <a href="" title="Evenements">Evenements</a>
+          </li>
+          <li class="header_nav_menu_link">
+            <a href="contact.html" title="Contact">Contact</a>
+          </li>
         </ul>
       </nav>
-      <div id="menuToggle" class="burger-menu">
-        <input type="checkbox" id="menuCheckbox" />
-        <!--
-      Some spans to act as a hamburger.
-      
-      They are acting like a real hamburger,
-      not that McDonalds stuff.
-      -->
-        <span></span>
-        <span></span>
-        <span></span>
-
-        <!--
-      Too bad the menu has to be inside of the button
-      but hey, it's pure CSS magic.
-      -->
-
-        <ul id="menu">
-          <li>
-            <a href="#Acceuil">
-              <label for="menuCheckbox" onclick="this.parentNode.click();"
-                >Acceuil</label
-              ></a
-            >
-          </li>
-          <li>
-            <a href="#Destinations">
-              <label for="menuCheckbox" onclick="this.parentNode.click();"
-                >Destinations</label
-              >
-            </a>
-          </li>
-          <li>
-            <a href="#Conseils" class="menuItem">Conseils de voyage</a>
-          </li>
-
-          <li>
-            <label for="menuCheckbox"
-              ><a href="#Evenement">Evenements</a></label
-            >
-          </li>
-
-          <li>
-            <label for="menuCheckbox"><a href="#Contact">Contact</a></label>
-          </li>
-        </ul>
+      <div class="header__burger" onclick="openMenuMobile()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+          />
+        </svg>
       </div>
     </header>
     <div class="c-banner">
@@ -92,16 +86,15 @@
     </div>
     <main>
       <section class="destinations">
-        <div class="containter">
+        <div class="containter slides-titre">
           <div class="card-titre">
             <p class="card-titre-1">Nos dernières</p>
             <p>Publications</p>
           </div>
           <div class="slides_list">
-
-             <div class="card slide">
+            <div class="card slide">
               <div class="card-img">
-                <img src="assets/martinique-1.png" alt="" />
+                <img src="assets/panama-1.png" alt="" />
               </div>
               <div class="card-descrition">
                 <p>Visiter la Martinique: 10 sites incontournables</p>
@@ -117,7 +110,15 @@
             </div>
             <div class="card slide">
               <div class="card-img">
-                <img src="assets/martinique-1.png" alt="" />
+                <img src="assets/paris-1.png" alt="" />
+              </div>
+              <div class="card-descrition">
+                <p>Visiter la Martinique: 10 sites incontournables</p>
+              </div>
+            </div>
+            <div class="card slide">
+              <div class="card-img">
+                <img src="assets/panama-1.png" alt="" />
               </div>
               <div class="card-descrition">
                 <p>Visiter la Martinique: 10 sites incontournables</p>
@@ -131,10 +132,77 @@
                 <p>Visiter la Martinique: 10 sites incontournables</p>
               </div>
             </div>
+            <div class="card slide">
+              <div class="card-img">
+                <img src="assets/paris-1.png" alt="" />
+              </div>
+              <div class="card-descrition">
+                <p>Visiter la Martinique: 10 sites incontournables</p>
+              </div>
+            </div>
+            <div class="card slide">
+              <div class="card-img">
+                <img src="assets/panama-1.png" alt="" />
+              </div>
+              <div class="card-descrition">
+                <p>Visiter la Martinique: 10 sites incontournables</p>
+              </div>
+            </div>
+            <div class="card slide">
+              <div class="card-img">
+                <img src="assets/martinique-1.png" alt="" />
+              </div>
+              <div class="card-descrition">
+                <p>Visiter la Martinique: 10 sites incontournables</p>
+              </div>
+            </div>
+            <div class="card slide">
+              <div class="card-img">
+                <img src="assets/paris-1.png" alt="" />
+              </div>
+              <div class="card-descrition">
+                <p>Visiter la Martinique: 10 sites incontournables</p>
+              </div>
+            </div>
+            <div class="card slide">
+              <div class="card-img">
+                <img src="assets/panama-1.png" alt="" />
+              </div>
+              <div class="card-descrition">
+                <p>Visiter la Martinique: 10 sites incontournables</p>
+              </div>
+            </div>
+            <div class="card slide">
+              <div class="card-img">
+                <img src="assets/martinique-1.png" alt="" />
+              </div>
+              <div class="card-descrition">
+                <p>Visiter la Martinique: 10 sites incontournables</p>
+              </div>
+            </div>
+            <div class="card slide">
+              <div class="card-img">
+                <img src="assets/paris-1.png" alt="" />
+              </div>
+              <div class="card-descrition">
+                <p>Visiter la Martinique: 10 sites incontournables</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
+    <script>
+      function openMenuMobile() {
+        document.querySelector(".header_nav").classList.add("open");
+        document.querySelector(".overlay-menu-mobile").classList.add("open");
+        console.log("courier envoyer");
+      }
+
+      function closeMenuMobile() {
+        document.querySelector(".header_nav").classList.remove("open");
+        document.querySelector(".overlay-menu-mobile").classList.remove("open");
+      }
+    </script>
   </body>
 </html>
